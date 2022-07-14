@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>회원관리 목록</title>
+	<style type="text/css">
+		#wrap{
+			background-image: "../image/homepage.jpg;"
+		}
+		
+		h1{
+			text-align: center;
+		}
+		
+		
+		#table-wrap{
+			text-align: center;
+			font-size: x-small;
+		}
+		
+		th{
+			color: white;
+		}
+	
+	
+	
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div id="wrap">
+	<h1><회원관리></h1><br><br><br>
+	<nav class="navbar navbar-expand-lg bg-light" style="font-size: x-small;">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		  번호
+		</a>
+		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="#">1</a></li>
+		    <li><a class="dropdown-item" href="#">2</a></li>	
+			<li><a class="dropdown-item" href="#">3</a></li>	
+			<li><a class="dropdown-item" href="#">4</a></li>
+			<li><a class="dropdown-item" href="#">5</a></li>
+		</ul>
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		  번호
+		</a>
+		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="#">1</a></li>
+		    <li><a class="dropdown-item" href="#">2</a></li>	
+			<li><a class="dropdown-item" href="#">3</a></li>	
+			<li><a class="dropdown-item" href="#">4</a></li>
+			<li><a class="dropdown-item" href="#">5</a></li>
+		</ul>
+		<form class="d-flex" role="search">
+        	<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+        	<button class="btn btn-outline-dark" type="submit">Search</button>
+      	</form>
+	</nav><br><br><br>
+	<div class="container-fluid">
+		<div id=table-wrap>
+			<table class="table table-hover" >
+			  <tr>
+			  	<th style="background-color: black"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+			  	<th style="background-color: black">번호</th>
+			  	<th style="background-color: black">이름</th>
+			  	<th style="background-color: black">생년월일</th>
+			  	<th style="background-color: black">전화번호</th>
+			  	<th style="background-color: black">주소</th>
+			  	<th style="background-color: black">이메일</th>
+			  	<th style="background-color: black">성별</th>
+			  </tr>
+			  <tr>
+			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td>1</td>
+			  	<td>고양이</td>
+			  	<td>880321</td>
+			  	<td>010-9999-9999</td>
+			  	<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
+			  	<td>dskfjls@naver.com</td>
+			  	<td>여</td>
+			  </tr>
+			  <tr>
+			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td>2</td>
+			  	<td>유성하</td>
+			  	<td>000314</td>
+			  	<td>010-8888-8888</td>
+			  	<td>서울 서초구 강남대로 455</td>
+			  	<td>eocjlvc@naver.com</td>
+			  	<td>남</td>
+			  </tr>
+			  <tr>
+			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td>3</td>
+			  	<td>추선웅</td>
+			  	<td>951202</td>
+			  	<td>010-7777-7777</td>
+			  	<td>서울 강남구 학동로21길 23</td>
+			  	<td>dpovlw@gmail.com</td>
+			  	<td>남</td>
+			  </tr>
+			  <tr>
+			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td>4</td>
+			  	<td>황종철</td>
+			  	<td>980908</td>
+			  	<td>010-6666-6666</td>
+			  	<td>서울 용산구 이촌로 310</td>
+			  	<td>dpvksjdk@naver.com</td>
+			  	<td>남</td>
+			  </tr>
+			  <tr>
+			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td>5</td>
+			  	<td>남연수</td>
+			  	<td>010527</td>
+			  	<td>010-5555-5555</td>
+			  	<td>서울 영등포구 의사당대로 1</td>
+			  	<td>dlgjlkdf@naver.com</td>
+			  	<td>여</td>
+			  </tr>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- end -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

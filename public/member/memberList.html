@@ -13,6 +13,10 @@
 			text-align: center;
 		}
 		
+		#button-div{
+			background-color: #e9e9ed;
+			height: 60px;
+		}
 		
 		#table-wrap{
 			text-align: center;
@@ -31,32 +35,32 @@
 <body>
 <div id="wrap">
 	<h1><회원관리></h1><br><br><br>
-	<nav class="navbar navbar-expand-lg bg-light" style="font-size: x-small;">
-		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		  번호
-		</a>
-		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<li><a class="dropdown-item" href="#">1</a></li>
-		    <li><a class="dropdown-item" href="#">2</a></li>	
-			<li><a class="dropdown-item" href="#">3</a></li>	
-			<li><a class="dropdown-item" href="#">4</a></li>
-			<li><a class="dropdown-item" href="#">5</a></li>
-		</ul>
-		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		  번호
-		</a>
-		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<li><a class="dropdown-item" href="#">1</a></li>
-		    <li><a class="dropdown-item" href="#">2</a></li>	
-			<li><a class="dropdown-item" href="#">3</a></li>	
-			<li><a class="dropdown-item" href="#">4</a></li>
-			<li><a class="dropdown-item" href="#">5</a></li>
-		</ul>
-		<form class="d-flex" role="search">
-        	<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-        	<button class="btn btn-outline-dark" type="submit">Search</button>
-      	</form>
-	</nav><br><br><br>
+	<div id="button-div">
+		<div class="btn-group" style="font-size: x-small;">
+		  <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		    번호
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		    <li><a class="dropdown-item" href="#">1</a></li>
+		    <li><a class="dropdown-item" href="#">2</a></li>
+		    <li><a class="dropdown-item" href="#">3</a></li>
+		    <li><a class="dropdown-item" href="#">4</a></li>
+		    <li><a class="dropdown-item" href="#">5</a></li>
+		  </ul>
+		</div>
+		<div class="btn-group" style="font-size: x-small;">
+		  <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		    회원가입년도
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		    <li><a class="dropdown-item" href="#"></a></li>
+		    <li><a class="dropdown-item" href="#"></a></li>
+		    <li><a class="dropdown-item" href="#"></a></li>
+		    <li><a class="dropdown-item" href="#"></a></li>
+		    <li><a class="dropdown-item" href="#"></a></li>
+		  </ul>
+		</div>		
+	</div><br><br><br><br>
 	<div class="container-fluid">
 		<div id=table-wrap>
 			<table class="table table-hover" >
@@ -69,6 +73,7 @@
 			  	<th style="background-color: black">주소</th>
 			  	<th style="background-color: black">이메일</th>
 			  	<th style="background-color: black">성별</th>
+			  	<th style="background-color: black">가입일</th>
 			  </tr>
 			  <tr>
 			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
@@ -79,6 +84,7 @@
 			  	<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
 			  	<td>dskfjls@naver.com</td>
 			  	<td>여</td>
+			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
 			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
@@ -89,6 +95,7 @@
 			  	<td>서울 서초구 강남대로 455</td>
 			  	<td>eocjlvc@naver.com</td>
 			  	<td>남</td>
+			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
 			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
@@ -99,6 +106,7 @@
 			  	<td>서울 강남구 학동로21길 23</td>
 			  	<td>dpovlw@gmail.com</td>
 			  	<td>남</td>
+			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
 			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
@@ -109,6 +117,7 @@
 			  	<td>서울 용산구 이촌로 310</td>
 			  	<td>dpvksjdk@naver.com</td>
 			  	<td>남</td>
+			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
 			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
@@ -119,6 +128,7 @@
 			  	<td>서울 영등포구 의사당대로 1</td>
 			  	<td>dlgjlkdf@naver.com</td>
 			  	<td>여</td>
+			  	<td>2022-09-08</td>
 			  </tr>
 			</table>
 		</div>

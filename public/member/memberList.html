@@ -13,6 +13,26 @@
 			text-align: center;
 		}
 		
+		#list-search-wrap{
+			border: 1px solid gray;
+			border-collapse: collapse;
+			padding: W
+		}
+		
+		option{
+			font-size: x-small;
+		}
+		
+		select{
+			width: 180px;
+			height: 21px;
+			font-size: x-small;
+		}
+		
+		#search-btn{
+			padding: 0px;
+		}
+		
 		#table-wrap{
 			text-align: center;
 			font-size: x-small;
@@ -34,6 +54,7 @@
 </head>
 <body>
 <div id="wrap" class="container-fluid">
+	<form method="get" action="./result.html" id="form">
 	<br>
 	<!-- 제목 -->
 	<h1>NONE</h1>
@@ -54,37 +75,56 @@
 	   		</ul>
 	  </div>
 	</div>	
-	<br><hr><br>
+	<br><br>
+	<!-- nav&tabs -->
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <a class="nav-link active" aria-current="page" href="#">코드급룹관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">코드관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">회원관리</a>
+	  </li>
+	</ul><br>	
+	
 	<!-- 리스트 제목 -->
 	<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive;">Member List</h1><br>
 	<br>
 	<!-- 리스트,검색	 -->
-	<div id="list&search">
-		<div class="dropdown-center">
-		  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
-		    번호
-		  </button>
-		  <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-		    <li><a class="dropdown-item" href="#">1</a></li>
-		    <li><a class="dropdown-item" href="#">2</a></li>
-		    <li><a class="dropdown-item" href="#">3</a></li>
-		    <li><a class="dropdown-item" href="#">4</a></li>
-		    <li><a class="dropdown-item" href="#">5</a></li>
-		  </ul>
+	<div id="list-search-wrap">
+		<div>
+			<select>
+				<option>번호
+				<option>1
+				<option>2
+				<option>3
+				<option>4
+				<option>5
+			</select>
+			<select>
+				<option>이름
+				<option>고양이
+				<option>2
+				<option>3
+				<option>4
+				<option>5
+			</select>
+			<select>
+				<option>주소
+				<option>서울
+				<option>경기도
+			</select>
 		</div>
-		<div class="dropdown-center">
-		  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
-		    번호
-		  </button>
-		  <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-		    <li><a class="dropdown-item" href="#">1</a></li>
-		    <li><a class="dropdown-item" href="#">2</a></li>
-		    <li><a class="dropdown-item" href="#">3</a></li>
-		    <li><a class="dropdown-item" href="#">4</a></li>
-		    <li><a class="dropdown-item" href="#">5</a></li>
-		  </ul>
-		</div>	
-	</div>
+		<div>
+			<select>
+				<option>검색구분
+			</select>
+			<input type="text" style="width: 180px; height: 22px;" placeholder="검색">
+			<button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+		</div>
+	</div><br><br>
 	<!-- 리스트 테이블 -->	
 	<div id=table-wrap>
 		<table class="table table-hover" >
@@ -175,6 +215,7 @@
 		    <li class="page-item"><a class="page-link" href="#">1</a></li>
 		    <li class="page-item"><a class="page-link" href="#">2</a></li>
 		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">4</a></li>
 		    <li class="page-item">
 		      <a class="page-link" href="#" aria-label="Next">
 		        <span aria-hidden="true">&raquo;</span>
@@ -183,11 +224,16 @@
 		  </ul>
 		</nav>		
 	</div><br><br>
-	<button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
-	
+	<!-- 맨밑 버튼들 -->
+	<div>	
+		<button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
+		<button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
+		<button type="button" class="btn btn-primary" style="float: right;"><i class="fa-solid fa-plus"></i></button>
+		<button type="button" class="btn btn-success" style="float: right;"><i class="fa-solid fa-file-lines"></i> 액셀</button>
+	</div>
 
 
-
+	</form>
 </div>
 
 <!-- end -->

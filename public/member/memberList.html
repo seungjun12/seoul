@@ -53,11 +53,11 @@
 		    회원가입년도
 		  </button>
 		  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-		    <li><a class="dropdown-item" href="#"></a></li>
-		    <li><a class="dropdown-item" href="#"></a></li>
-		    <li><a class="dropdown-item" href="#"></a></li>
-		    <li><a class="dropdown-item" href="#"></a></li>
-		    <li><a class="dropdown-item" href="#"></a></li>
+		    <li><a class="dropdown-item" href="#">1980</a></li>
+		    <li><a class="dropdown-item" href="#">1990</a></li>
+		    <li><a class="dropdown-item" href="#">2000</a></li>
+		    <li><a class="dropdown-item" href="#">2010</a></li>
+		    <li><a class="dropdown-item" href="#">2020</a></li>
 		  </ul>
 		</div>		
 	</div><br><br><br><br>
@@ -65,7 +65,7 @@
 		<div id=table-wrap>
 			<table class="table table-hover" >
 			  <tr>
-			  	<th style="background-color: black"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+			  	<th style="background-color: black"><input class="test" type="checkbox" value="" name="checkAll" id="checkAll"></th>
 			  	<th style="background-color: black">번호</th>
 			  	<th style="background-color: black">이름</th>
 			  	<th style="background-color: black">생년월일</th>
@@ -76,7 +76,7 @@
 			  	<th style="background-color: black">가입일</th>
 			  </tr>
 			  <tr>
-			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td><input class="test" type="checkbox" value="" name="check" onclick="chceckSelectAll" ></td>
 			  	<td>1</td>
 			  	<td>고양이</td>
 			  	<td>880321</td>
@@ -87,7 +87,7 @@
 			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
-			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td><input class="test" type="checkbox" value="" name="check"></td>
 			  	<td>2</td>
 			  	<td>유성하</td>
 			  	<td>000314</td>
@@ -98,7 +98,7 @@
 			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
-			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td><input class="test" type="checkbox" value="" name="check"></td>
 			  	<td>3</td>
 			  	<td>추선웅</td>
 			  	<td>951202</td>
@@ -109,7 +109,7 @@
 			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
-			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td><input class="test" type="checkbox" value="" name="check"></td>
 			  	<td>4</td>
 			  	<td>황종철</td>
 			  	<td>980908</td>
@@ -120,7 +120,7 @@
 			  	<td>2022-09-08</td>
 			  </tr>
 			  <tr>
-			  	<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+			  	<td><input class="test" type="checkbox" value="" name="check"></td>
 			  	<td>5</td>
 			  	<td>남연수</td>
 			  	<td>010527</td>
@@ -137,5 +137,31 @@
 <!-- end -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="http:code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function checkSelectAll()  {
+
+		const checkboxes = document.querySelectorAll('input[name="membercheck"]');
+
+		const checked = document.querySelectorAll('input[name="membercheck"]:checked');
+
+		const selectAll = document.querySelector('input[name="allmembercheck"]');
+		  
+		if(checkboxes.length === checked.length)  {
+		  selectAll.checked = true;
+		}else {
+		  selectAll.checked = false;
+		}
+		
+	}
+	
+	function selectall(selectall)  {
+		const checkboxes = document.getElementsByName('membercheck');
+		
+		checkboxes.forEach((checkbox) => {
+	    checkbox.checked = selectall.checked
+	  })
+	}
+</script>	
 </body>
 </html>

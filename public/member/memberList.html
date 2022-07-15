@@ -16,7 +16,7 @@
 		#list-search-wrap{
 			border: 1px solid gray;
 			border-collapse: collapse;
-			padding: W
+			padding-left: 2px;
 		}
 		
 		option{
@@ -31,6 +31,7 @@
 		
 		#search-btn{
 			padding: 0px;
+			height: 22px;
 		}
 		
 		#table-wrap{
@@ -40,12 +41,9 @@
 		
 		th{
 			color: white;
-		}
-		
-		
-	
-	
-	
+		}	
+				
+
 	</style>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,15 +62,16 @@
 	</div>
 	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 	  <div class="offcanvas-header">
-	    <h5 class="offcanvas-title" id="offcanvasRightLabel">박승준</h5>
+	    <h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="fa-solid fa-user-large"></i>  박승준</h5>
 	    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	  </div>
 	  <hr>
 	  <div class="offcanvas-body">
 	    로그아웃<hr>
-	    	<ul>
-	   			<li>본인정보
-	   		</ul>
+    	<ul>
+   			<li>본인정보
+   			<li>정보수정
+   		</ul>
 	  </div>
 	</div>	
 	<br><br>
@@ -82,13 +81,12 @@
 	    <a class="nav-link active" aria-current="page" href="#">코드급룹관리</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">코드관리</a>
+	    <a class="nav-link" href="#" style="color: black">코드관리</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">회원관리</a>
+	    <a class="nav-link" href="#" style="color: black">회원관리</a>
 	  </li>
 	</ul><br>	
-	
 	<!-- 리스트 제목 -->
 	<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive;">Member List</h1><br>
 	<br>
@@ -116,13 +114,24 @@
 				<option>서울
 				<option>경기도
 			</select>
+			<select>
+				<option>성별
+				<option>남
+				<option>여
+			</select>
+			<select>
+				<option>삭제여부
+				<option>o
+				<option>x
+			</select>
 		</div>
 		<div>
 			<select>
 				<option>검색구분
 			</select>
-			<input type="text" style="width: 180px; height: 22px;" placeholder="검색">
-			<button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<input type="text" style="width: 180px; height: 22px;" placeholder="검색">&nbsp;
+			<button type="button" class="btn btn-light" style="padding: 1px"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;
+			<button type="button" class="btn btn-warning" style="padding: 1px"><i class="fa-solid fa-arrow-rotate-right"></i></button>
 		</div>
 	</div><br><br>
 	<!-- 리스트 테이블 -->	
@@ -203,7 +212,7 @@
 		</table>
 	</div><br>
 	<br><br>
-	<!-- 페이지넘기기버트 -->
+	<!-- pagination -->
 	<div class="d-flex justify-content-center">
 		<nav aria-label="Page navigation example">
 		  <ul class="pagination">
@@ -228,8 +237,8 @@
 	<div>	
 		<button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
 		<button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
-		<button type="button" class="btn btn-primary" style="float: right;"><i class="fa-solid fa-plus"></i></button>
-		<button type="button" class="btn btn-success" style="float: right;"><i class="fa-solid fa-file-lines"></i> 액셀</button>
+		<button type="button" class="btn btn-primary" style="float: right;border-right-width: 1px;margin-right:8px;"><i class="fa-solid fa-plus"></i></button>
+		<button type="button" class="btn btn-success" style="float: right;margin-right:8px;"><i class="fa-solid fa-file-lines"></i> 액셀</button>
 	</div>
 
 

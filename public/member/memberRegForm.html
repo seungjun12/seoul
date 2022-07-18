@@ -4,16 +4,200 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>회원관리 등록</title>
+	<style type="text/css">
+	
+	#wrap-list{
+			width: 500px;
+			margin: auto;
+		}
+	
+	
+	</style>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-	
-<!-- start -->	
-	
-	<h1>Hello, world!</h1>
 
-<!-- end -->
+<div id="wrap" class="container-fluid">
+	<form method="get" action="./result.html" id="form" class="row gx-3 gy-2 align-items-center">
+<!-- 제목 -->
+	<h1 onclick="location.href='memberList.html'" style="cursor: pointer;">NONE</h1>
+	<!-- 본인상세화면 -->
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+		<button class="btn btn-dark me-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+	</div>
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+	  <div class="offcanvas-header">
+	    <h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="fa-solid fa-user-large"></i>  박승준</h5>
+	    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	  </div>
+	  <hr>
+	  <div class="offcanvas-body">
+	    로그아웃<hr>
+    	<ul>
+   			<li>본인정보
+   			<li>정보수정
+   		</ul>
+	  </div>
+	</div>	
+	<br><br>
+	<!-- nav&tabs -->
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <a class="nav-link" href="#" style="color: black">코드급룹관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#" style="color: black">코드관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+	  </li>
+	</ul>
+	<div id="wrap-list">
+		<br><br>
+		<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive;">Member List</h1><br><br>		
+		<h4>회원등록</h4><br><hr><br>
+		<!-- 리스트 시작 -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 6px;">
+					아이디
+				</div>
+				<div class="col-7">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=아이디>
+				</div>
+				<div class="col-3">
+					<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-size: xx-small; padding-top: 12px; padding-right: 25px; padding-left: 25px;" >중복확인</button>
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="staticBackdropLabel">아이디 중복확인</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        사용가능합니다!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+					        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">사용하기</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>					
+				</div>
+			</div>
+		</div><br>	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 6px;">
+					이름
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=이름>
+				</div>
+			</div>
+		</div><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 6px; font-size: small;">
+					생년월일
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=생년월일>
+				</div>
+			</div>
+		</div><br>	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 6px; font-size: small;">
+					비밀번호
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=비밀번호>
+				</div>
+			</div>
+		</div><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 6px; font-size: small;">
+					비밀번호 확인
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=비밀번호확인>
+				</div>
+			</div>
+		</div><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2">
+					성별
+				</div>
+				<div class="col-5" style="padding-left: 50px;">
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">남</label>
+					</div>					
+				</div>
+				<div class="col-5">
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">여</label>
+					</div>				
+				</div>
+			</div>		
+		</div><br>	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 7px;">
+					이메일
+				</div>
+				<div class="col-5">
+				  <label class="visually-hidden" for="specificSizeInputName">Name</label>
+				  <input type="text" class="form-control" id="specificSizeInputName">
+				</div>				
+				<div class="col-5">
+					<select class="form-select" aria-label="Default select example">
+					  <option selected>직접입력</option>
+					  <option value="1">@naver.com</option>
+					  <option value="2">@gmail.com</option>
+					  <option value="3">@daum.net</option>
+					  <option value="3">@nate.com</option>
+					</select>				
+				</div>
+			</div>
+		</div><br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2" style="padding-top: 7px;">
+					주소
+				</div>
+				<div class="col">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder=주소>					
+				</div>
+			</div><br>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2">
+					가입일
+				</div>
+				<div class="col" style="text-align: center;">
+					2022-07-18
+				</div>
+			</div>
+		</div><br>
+		<div class="d-grid gap-2 d=md-block">
+			<button class="btn btn-secondary" type="button" onclick="location.href='memberList.html'" style="cursor: pointer;">등록</button>
+		</div><br><br><br>
+			
+	
+	</div><!-- wrap-list end -->
+	</form>
+</div><!-- wrap end -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -42,6 +42,8 @@
 		th{
 			color: white;
 		}	
+		
+		
 				
 
 	</style>
@@ -79,7 +81,7 @@
 	<!-- nav&tabs -->
 	<ul class="nav nav-tabs">
 	  <li class="nav-item">
-	    <a class="nav-link active" aria-current="page" href="#">코드급룹관리</a>
+	    <a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="#" style="color: black">코드관리</a>
@@ -94,42 +96,55 @@
 	<!-- 리스트,검색	 -->
 	<div id="list-search-wrap">
 		<div>
-			<select>
-				<option>번호
-				<option>1
-				<option>2
-				<option>3
-				<option>4
-				<option>5
-			</select>
-			<select>
-				<option>이름
-				<option>고양이
-				<option>유성하
-				<option>추선웅
-				<option>황종철
-				<option>남연수
-			</select>
-			<select>
-				<option>주소
-				<option>서울
-				<option>경기도
-			</select>
-			<select>
-				<option>성별
-				<option>남
-				<option>여
-			</select>
-			<select>
-				<option>삭제여부
-				<option>o
-				<option>x
-			</select>
+			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   번호
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">1</a></li>
+			   <li><a class="dropdown-item" href="#">2</a></li>
+			   <li><a class="dropdown-item" href="#">3</a></li>
+			   <li><a class="dropdown-item" href="#">4</a></li>
+			   <li><a class="dropdown-item" href="#">5</a></li>
+			 </ul>			
+			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   이름
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">고양이</a></li>
+			   <li><a class="dropdown-item" href="#">유성하</a></li>
+			   <li><a class="dropdown-item" href="#">추선웅</a></li>
+			   <li><a class="dropdown-item" href="#">황종철</a></li>
+			   <li><a class="dropdown-item" href="#">남연수</a></li>
+			 </ul>		
+			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   주소
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">서울</a></li>
+			   <li><a class="dropdown-item" href="#">경기도</a></li>
+			 </ul>
+			 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   성별
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">남</a></li>
+			   <li><a class="dropdown-item" href="#">여</a></li>
+			 </ul>
+			 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   삭제여부
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">O</a></li>
+			   <li><a class="dropdown-item" href="#">X</a></li>
+			 </ul>
 		</div>
 		<div>
-			<select>
-				<option>검색구분
-			</select>
+			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+			   검색구분
+			 </button>
+			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			   <li><a class="dropdown-item" href="#">검색구분</a></li>
+			 </ul>
 			<input type="text" style="width: 180px; height: 22px;" placeholder="검색">&nbsp;
 			<button type="button" class="btn btn-light" style="padding: 1px"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;
 			<button type="button" class="btn btn-warning" style="padding: 1px"><i class="fa-solid fa-arrow-rotate-right"></i></button>
@@ -159,7 +174,7 @@
 		  	<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
 		  	<td>dskfjls@naver.com</td>
 		  	<td>여</td>
-		  	<td>2022-09-08</td>
+		  	<td>2022-07-19</td>
 		  	<td>x</td>
 		  </tr>
 		  <tr>
@@ -213,7 +228,7 @@
 		</table>
 	</div><br>
 	<br><br>
-	<!-- pagination -->
+	<!-- pagination --><!-- 색깔 바꾸기 도전 계속 해야되 -->
 	<div class="d-flex justify-content-center">
 		<nav aria-label="Page navigation example">
 		  <ul class="pagination">

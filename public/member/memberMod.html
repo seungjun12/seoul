@@ -6,7 +6,14 @@
 	<title>회원관리 수정</title>
 	<style type="text/css">
 	
+	#wrap-list{
+		width: 500px;
+		margin: auto;
+	}
 	
+	.text{
+		text-align: center;
+	}
 	
 	</style>
 	
@@ -41,95 +48,101 @@
 		<br><br>
 		<!-- nav&tabs -->
 		<ul class="nav nav-tabs">
-		  <li class="nav-item">
-		    <a class="nav-link" href="#" style="color: black">코드그룹관리</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#" style="color: black">코드관리</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link active" aria-current="page" href="#">회원관리</a>
-		  </li>
+ 			<li class="nav-item">
+		    	<a class="nav-link" href="#" style="color: black">코드그룹관리</a>
+		    </li>
+		  	<li class="nav-item">
+		        <a class="nav-link" href="#" style="color: black">코드관리</a>
+		  	</li>
+		  	<li class="nav-item">
+	   		 	<a class="nav-link active" aria-current="page" href="#">회원관리</a>
+		  	</li>
 		</ul>	
+		<!-- list start -->
+		<div id="wrap-list">
+			<br><br>
+			<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive; text-align: center;">Member Modify</h1><br><br>		
+			<hr><br>
 		<!-- 리스트 시작 -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2">
-					이름:
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						이름:
+					</div>
+					<div class="col-4 text">
+						고양이
+					</div>
+					<div class="col-2">
+						닉네임:
+					</div>
+					<div class="col-2 text">
+						ㅋㅋ
+					</div>
 				</div>
-				<div class="col-4 text">
-					고양이
+			</div><br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" style="font-size: small;">
+						생년월일
+					</div>
+					<div class="col-10 text">
+						880321
+					</div>
 				</div>
-				<div class="col-2">
-					닉네임:
+			</div><br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" style="font-size: small;">
+						비밀번호
+					</div>
+					<div class="col text">
+						dllvic0908							
+					</div>
 				</div>
-				<div class="col-2 text">
-					ㅋㅋ
+			</div><br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						성별
+					</div>
+					<div class="col text">
+						여
+					</div>
+				</div>		
+			</div><br><br>	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						이메일
+					</div>
+					<div class="col text">
+						saofljsf@naver.com
+					</div>
 				</div>
-			</div>
-		</div><br><br>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2" style="font-size: small;">
-					생년월일
+			</div><br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						주소
+					</div>
+					<div class="col text">
+						서울 서초구 서초대로77길 55 에이프로 스퀘어 3층
+					</div>
 				</div>
-				<div class="col-10 text">
-					880321
+			</div><br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						가입일
+					</div>
+					<div class="col text">
+						2022-07-20
+					</div>
 				</div>
-			</div>
-		</div><br><br>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2" style="padding-top: 6px; font-size: small;">
-					비밀번호
-				</div>
-				<div class="col text">
-					dllvic0908							
-				</div>
-			</div>
-		</div><br><br>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2">
-					성별
-				</div>
-				<div class="col text">
-					여
-				</div>
-			</div>		
-		</div><br>	
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2" style="padding-top: 7px;">
-					이메일
-				</div>
-				<div class="col text">
-					saofljsf@naver.com
-				</div>
-			</div>
-		</div><br>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2" style="padding-top: 7px;">
-					주소
-				</div>
-				<div class="col text">
-					서울 서초구 서초대로77길 55 에이프로 스퀘어 3층
-				</div>
-			</div><br>
+			</div><br>		
 		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2">
-					가입일
-				</div>
-				<div class="col text">
-					2022-07-20
-				</div>
-			</div>
-		</div><br>		
-	</div>
-
+	</form>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
 </body>

@@ -66,108 +66,135 @@
 			<br><br>
 			<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive; text-align: center;">Member Modify</h1><br><br>		
 			<hr><br>
-		<!-- 리스트 시작 -->
+			<!-- 리스트 시작 -->
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2">
-						이름:
+					<div class="col-2" style="padding-top: 6px;">
+						아이디
 					</div>
-					<div class="col-3 text">
+					<div class="col-10" style="text-align: center">
+						ldflkdf0908
+					</div>
+					
+				</div>
+			</div><br>	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" style="padding-top: 6px;">
+						이름
+					</div>
+					<div class="col-4" style="text-align: center"> 여기서부터 하자
 						고양이
 					</div>
-					<div class="col-2">
-						닉네임:
+					<div class="col-2" style="padding-top: 6px;">
+						닉네임
 					</div>
-					<div class="col-2 text">
-						ㅋㅋ
-					</div>
-					<div class="col-1 text">
-						<p>
-							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="padding: 1px;">
-								<i class="fa-solid fa-pen"></i>  
-							</a>						
-						</p>
+					<div class="col">
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder=닉네임>
 					</div>
 				</div>
-				<div class="collapse" id="collapseExample">
-					<div class="card card-body">
-						<input type="text">  
-					</div>
-				</div>												
-			</div><br><br>
+			</div><br>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2" style="font-size: small;">
+					<div class="col-2" style="padding-top: 6px; font-size: small;">
 						생년월일
 					</div>
-					<div class="col-9 text">
-						880321
+					<div class="col-9">
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder=생년월일>
 					</div>
-					<div class="col-1 text">
-						<p>
-							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="padding: 1px;">
-								<i class="fa-solid fa-pen"></i>  
-							</a>						
-						</p>						
+					<div class="col-1" style="padding-top: 5px; padding-left: 0px; padding-right: 0px;">
+						<button type="button">
+							<i class=" fa-solid fa-lg fa-calendar-days"></i>
+						</button>
 					</div>
 				</div>
-				<div class="collapse" id="collapseExample2">
-					<div class="card card-body">
-						<input type="text">  
-					</div>
-				</div>
-			</div><br><br>
+			</div><br>	
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2" style="font-size: small;">
+					<div class="col-2" style="padding-top: 6px; font-size: small;">
 						비밀번호
 					</div>
-					<div class="col text">
-						dllvic0908							
+					<div class="col">
+						<div class="form-floating"  >
+						  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						  <label for="floatingPassword">비밀번호</label>
+						</div>					
 					</div>
 				</div>
-			</div><br><br>
+			</div><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" style="padding-top: 6px; font-size: small;">
+						비밀번호 확인
+					</div>
+					<div class="col">
+						<div class="form-floating">
+						  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						  <label for="floatingPassword">비밀번호 확인</label>
+						</div>						
+					</div>
+				</div>
+			</div><br>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2">
 						성별
 					</div>
-					<div class="col text">
-						여
+					<div class="col-5" style="padding-left: 50px;">
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+						  <label class="form-check-label" for="inlineRadio1">남</label>
+						</div>					
+					</div>
+					<div class="col-5">
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						  <label class="form-check-label" for="inlineRadio2">여</label>
+						</div>				
 					</div>
 				</div>		
-			</div><br><br>	
+			</div><br>	
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2">
+					<div class="col-2" style="padding-top: 7px;">
 						이메일
 					</div>
-					<div class="col text">
-						saofljsf@naver.com
+					<div class="col-5">
+					  <label class="visually-hidden" for="specificSizeInputName">Name</label>
+					  <input type="text" class="form-control" id="specificSizeInputName">
+					</div>				
+					<div class="col-5">
+						<select class="form-select" aria-label="Default select example">
+						  <option selected>직접입력</option>
+						  <option value="1">@naver.com</option>
+						  <option value="2">@gmail.com</option>
+						  <option value="3">@daum.net</option>
+						  <option value="3">@nate.com</option>
+						</select>				
 					</div>
 				</div>
-			</div><br><br>
+			</div><br>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2">
+					<div class="col-2" style="padding-top: 7px;">
 						주소
 					</div>
-					<div class="col text">
-						서울 서초구 서초대로77길 55 에이프로 스퀘어 3층
+					<div class="col">
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder=주소>					
 					</div>
-				</div>
-			</div><br><br>
+				</div><br>
+			</div>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2">
 						가입일
 					</div>
-					<div class="col text">
-						2022-07-20
+					<div class="col" style="text-align: center;">
+						2022-07-19
 					</div>
 				</div>
-			</div><br>		
-		</div>
+			</div><br>
+		</div><br><br><!-- wrap-list end -->
 		<div>
 			<button type="button" class="btn btn-primary" style="float: right;border-right-width: 1px;margin-right:8px;" onclick="location.href='memberList.html'"><i class="fa-solid fa-plus"></i></button>
 		</div>

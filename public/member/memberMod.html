@@ -73,7 +73,7 @@
 						아이디
 					</div>
 					<div class="col-10" style="text-align: center">
-						dovc0908
+						<input type="text" class="form-control" id="formGroupExampleInput" value="modc0908">
 					</div>
 				</div>
 			</div><br><br>	
@@ -99,7 +99,7 @@
 						생년월일
 					</div>
 					<div class="col-9">
-						<input type="text" class="form-control" id="formGroupExampleInput" value="880321">
+						<input type="number" class="form-control" id="formGroupExampleInput" value="880321">
 					</div>
 					<div class="col-1" style="padding-top: 5px; padding-left: 0px; padding-right: 0px;">
 						<button type="button">
@@ -107,33 +107,17 @@
 						</button>
 					</div>
 				</div>
-			</div><br>	
+			</div><br><br>	
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2" style="padding-top: 6px; font-size: small;">
 						비밀번호
 					</div>
 					<div class="col">
-						<div class="form-floating"  >
-						  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-						  <label for="floatingPassword">비밀번호</label>
-						</div>					
+						<input type="password" class="form-control" id="formGroupExampleInput" value="************">					
 					</div>
 				</div>
-			</div><br>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-2" style="padding-top: 6px; font-size: small;">
-						비밀번호 확인
-					</div>
-					<div class="col">
-						<div class="form-floating">
-						  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-						  <label for="floatingPassword">비밀번호 확인</label>
-						</div>						
-					</div>
-				</div>
-			</div><br>
+			</div><br><br>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2">
@@ -152,7 +136,7 @@
 						</div>				
 					</div>
 				</div>		
-			</div><br>	
+			</div><br><br>	
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2" style="padding-top: 7px;">
@@ -172,7 +156,7 @@
 						</select>				
 					</div>
 				</div>
-			</div><br>
+			</div><br><br>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2" style="padding-top: 7px;">
@@ -181,8 +165,8 @@
 					<div class="col">
 						<input type="text" class="form-control" id="formGroupExampleInput" value="서울 서초구 서초대로77길 55 에이프로 스퀘어 3층">					
 					</div>
-				</div><br>
-			</div>
+				</div>
+			</div><br><br>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2">
@@ -195,22 +179,22 @@
 			</div><br>
 		</div><br><br><!-- wrap-list end -->
 		<div>
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="location.href='memberList.html'"><i class="fa-solid fa-rotate-left"></i></button>
-			<button type="button" class="btn btn-primary" style="float: right;border-right-width: 1px;margin-right:8px;" onclick="location.href='memberList.html'"><i class="fa-solid fa-pen"></i></button>
+			<button type="button" class="btn btn-secondary"  onclick="location.href='memberList.html'"><i class="fa-solid fa-rotate-left"></i></button>
+			<button type="button" class="btn btn-primary" style="float: right;border-right-width: 1px;margin-right:8px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-pen"></i></button>
 			<!-- Modal -->
 			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+			        <h5 class="modal-title" id="staticBackdropLabel">수정</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
-			        ...
+			        수정하시겠습니까?
 			      </div>
 			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary">Understood</button>
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			        <button type="button" class="btn btn-primary" onclick="location.href='memberList.html'">수정하기</button>
 			      </div>
 			    </div>
 			  </div>

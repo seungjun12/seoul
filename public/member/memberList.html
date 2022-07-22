@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>회원관리 목록</title>
 	<style type="text/css">
-		#wrap{
-			background-image: "../image/homepage.jpg;"
+
+		
+		#wrap-list{
+			width: 6500px;
+			margin: auto;
 		}
 		
 		#list-head{
@@ -43,7 +46,7 @@
 			color: white;
 		}	
 		
-
+	
 	</style>
 	<link href="./css/list_style.css" rel="stylesheet" type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -53,44 +56,44 @@
 </head>
 <body>
 <div id="wrap" class="container-fluid">
-	<form method="get" action="./result.html" id="form">
-	<br>
-	<!-- 제목 -->
-	<h1>NONE</h1>
-	<!-- 본인상세화면 -->
-	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-		<button class="btn btn-dark me-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-align-justify"></i></button>
-	</div>
-	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-	  <div class="offcanvas-header">
-	    <h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="fa-solid fa-user-large"></i>  박승준</h5>
-	    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	  </div>
-	  <hr>
-	  <div class="offcanvas-body">
-	    로그아웃<hr>
-    	<ul>
-   			<li>본인정보
-   			<li>정보수정
-   		</ul>
-	  </div>
-	</div>	
-	<br><br>
-	<!-- nav&tabs -->
-	<ul class="nav nav-tabs">
-		<li class="nav-item">
-		  <a class="nav-link" href="#" style="color: black;">코드그룹관리</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#" style="color: black;">코드관리</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link active" aria-current="page" href="#">회원관리</a>
-		</li>	
-	</ul><br>	
-	<!-- 리스트 제목 -->
-	<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive;">Member List</h1><br>
-	<br>
+	<form method="get" action="./result.html" id="form" class="row gx-3 gy-2 align-items-center">
+		<!-- 제목 -->
+		<h1 onclick="location.href='memberList.html'" style="cursor: pointer;">NONE</h1>
+		<!-- 본인상세화면 -->
+		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+			<button class="btn btn-dark me-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+		</div>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			<div class="offcanvas-header">
+		    	<h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="fa-solid fa-user-large"></i>  박승준</h5>
+		    	<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div><hr>
+		<div class="offcanvas-body">
+		    로그아웃<hr>
+	    	<ul>
+	   			<li>본인정보
+	   			<li>정보수정
+	   		</ul>
+		</div>
+		</div>	
+		<br><br>
+		<!-- nav&tabs -->
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+		    	<a class="nav-link" href="#" style="color: black">코드그룹관리</a>
+		  	</li>
+		  	<li class="nav-item">
+				<a class="nav-link" href="#" style="color: black">코드관리</a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link active" aria-current="page" href="#">회원관리</a>
+		  	</li>
+		</ul>
+		<div id="wrap-list">
+			<br><br>
+			<h1 id="list-head" style="font-family: 'Edu QLD Beginner', cursive; text-align: center;">Member Information</h1><br><br>		
+			<br>
+		</div>	
 	<!-- 리스트,검색	 -->
 	<div id="list-search-wrap">
 		<div>
@@ -136,14 +139,14 @@
 			   <li><a class="dropdown-item" href="#">X</a></li>
 			 </ul>
 		</div>
-		<div>
+		<div style="padding-top: 3px;">
 			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
 			   검색구분
 			 </button>
 			 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 			   <li><a class="dropdown-item" href="#">검색구분</a></li>
 			 </ul>
-			<input type="text" style="width: 180px; height: 22px;" placeholder="검색">&nbsp;
+			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="검색" style="display: inline-block; width: 200px;">
 			<button type="button" class="btn btn-light" style="padding: 1px"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;
 			<button type="button" class="btn btn-warning" style="padding: 1px"><i class="fa-solid fa-arrow-rotate-right"></i></button>
 		</div>
@@ -165,15 +168,15 @@
 		  </tr>
 		  <tr>
 		  	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck" onclick="chceckSelectAll()" ></td>
-		  	<td>1</td>
-		  	<td onclick="location.href='memberView.html'" style="cursor: pointer;">고양이</td>
-		  	<td>880321</td>
-		  	<td>010-9999-9999</td>
-		  	<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
-		  	<td>dskfjls@naver.com</td>
-		  	<td>여</td>
-		  	<td>2022-07-19</td>
-		  	<td>x</td>
+		  	<td class="click">1</td>
+		  	<td onclick="location.href='memberMod.html'" style="cursor: pointer;" class="onclick">고양이</td>
+		  	<td class="click">880321</td>
+		  	<td class="click">010-9999-9999</td>
+		  	<td class="click">서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
+		  	<td class="click">dskfjls@naver.com</td>
+		  	<td class="click">여</td>
+		  	<td class="click">2022-07-19</td>
+		  	<td class="click">x</td>
 		  </tr>
 		  <tr>
 		  	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
@@ -250,7 +253,25 @@
 	<!-- 맨밑 버튼들 -->
 	<div>	
 		<button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
-		<button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i> 삭제</button>
+		<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-trash"></i> 삭제</button>
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="staticBackdropLabel">삭제</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        삭제하시겠습니까?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+		        <button type="button" class="btn btn-danger">삭제</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
 		<button type="button" class="btn btn-primary" style="float: right;border-right-width: 1px;margin-right:8px;" onclick="location.href='memberRegForm.html'"><i class="fa-solid fa-plus"></i></button>
 		<button type="button" class="btn btn-success" style="float: right;margin-right:8px;"><i class="fa-solid fa-file-lines"></i> 액셀</button>
 	</div>

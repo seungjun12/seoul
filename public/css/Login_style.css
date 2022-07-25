@@ -32,3 +32,8 @@ h1{
 #found{
 	margin-top: 10px;
 }
+
+#kLoginButton{
+	width: 300px;
+	margin-top: 30px;
+}

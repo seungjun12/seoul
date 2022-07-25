@@ -1,8 +1,33 @@
 #wrap{
 	margin: auto;
-	width: 500px;	
+	width: 400px;	
 }
 
 h1{
-	text-align: center;	
+	text-align: center;
+	padding-top: 100px;
+}
+#login_wrap{
+	width: 300px;
+	margin: auto;
+}
+#id{
+	padding-top: 50px;
+}
+
+#password{
+	padding-top: 20px;
+}
+
+#checkBox{
+	margin-top: 10px;
+}
+
+#loginCheckbox{
+	font-size: small;
+}
+
+#loginButton{
+	width: 300px;
+	margin-top: 10px;
 }

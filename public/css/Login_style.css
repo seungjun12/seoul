@@ -1,16 +1,13 @@
 #wrap{
 	margin: auto;
-	width: 400px;	
+	width: 300px;	
 }
 
 h1{
 	text-align: center;
 	padding-top: 100px;
 }
-#login_wrap{
-	width: 300px;
-	margin: auto;
-}
+
 #id{
 	padding-top: 50px;
 }

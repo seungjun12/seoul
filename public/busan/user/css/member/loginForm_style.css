@@ -1,0 +1,105 @@
+		#searchNav{
+			width: 1000px;
+			margin: auto;
+			margin-top: 80px;
+		}
+		
+		#search{
+			width: 350px;
+			display: inline-block;
+			margin-left: 115px; 
+			
+		}
+		
+		.top{
+			list-style: none;
+			float: right;
+		}
+		
+		#memberInformation{
+			padding-top: 10px;
+			padding-right: 30px;
+			font-size: small;
+		}
+		
+		#memberRegister{
+			padding-top: 10px;
+			padding-right: 30px;
+			font-size: small;
+		}
+		
+		#login{
+			padding-top: 10px;
+			font-size: small;
+			padding-right: 30px;
+		}
+		
+		
+		#login_wrap{
+			width: 300px;
+			margin: auto;
+			margin-top: 120px;
+		}
+		
+		#navbar{ 
+			margin-top: 80px;
+			text-align: center;
+		}
+
+		.nav-link{
+			color: white;
+		}
+		
+		#password{
+			margin-top: 20px;
+		}
+		
+		#login_button{
+			width: 300px;
+			margin-top: 22px;
+		}
+		
+		#naver-login-button{
+			width: 300px;
+			margin-top: 60px;
+		}
+		
+		#kakao-login-button{
+			width: 300px;
+			margin-top: 10px;
+		}
+		
+		#personal-private-answer{
+			margin-top: 20px;
+		}
+		
+		#answer{
+			font-size: small;
+		}
+		
+		.btn-outline-success{
+			color: black;
+		}
+		
+
+		.btn-outline-warning{
+			color: black;
+		}
+		.bottom{
+			list-style: none;
+			float: left;
+			font-size: small;
+		}
+		
+		#bottom-ul{
+			padding-left: 0px;
+		}
+		
+		#find-id{
+			margin-left: 15px;
+		}
+		
+		#member-register{
+			margin-left: 15px;
+		}
+		

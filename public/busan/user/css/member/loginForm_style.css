@@ -103,3 +103,17 @@
 			margin-left: 15px;
 		}
 		
+		#footer-wrap{
+			background-color: gray
+		}
+		
+		#footer{
+			margin: auto;
+			width: 1000px;
+		}
+		
+		.footer-list{
+			list-style: none;
+			float: left;
+		}
+		

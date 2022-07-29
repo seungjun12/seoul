@@ -19,16 +19,21 @@ h4{
 	margin-top: 60px;
 }
 
-#id-input{
-	margin-top: 5px;
-}
 
 .form-control{
 	border-style: none;
 	text-align: center;
 }
 
-#period-button{
-	margin: auto;
+span{
+	font-size: xx-small;
+	color: gray;
 }
+
+#checkbox-gender{
+	margin-left: 240px;
+	margin-right: 240px;
+}
+
+
 		

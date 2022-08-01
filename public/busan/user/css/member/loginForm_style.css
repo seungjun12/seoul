@@ -1,119 +1,114 @@
-		#searchNav{
-			width: 1000px;
-			margin: auto;
-			margin-top: 80px;
-		}
-		
-		#search{
-			width: 350px;
-			display: inline-block;
-			margin-left: 115px; 
-			
-		}
-		
-		.top{
-			list-style: none;
-			float: right;
-		}
-		
-		#memberInformation{
-			padding-top: 10px;
-			padding-right: 30px;
-			font-size: small;
-		}
-		
-		#memberRegister{
-			padding-top: 10px;
-			padding-right: 30px;
-			font-size: small;
-		}
-		
-		#login{
-			padding-top: 10px;
-			font-size: small;
-			padding-right: 30px;
-		}
-		
-		
-		#login_wrap{
-			width: 300px;
-			margin: auto;
-			margin-top: 120px;
-		}
-		
-		#navbar{ 
-			margin-top: 80px;
-			text-align: center;
-		}
+#topGnbbg{
+	background: #ededf3;
+}
 
-		.nav-link{
-			color: white;
-		}
-		
-		#password{
-			margin-top: 20px;
-		}
-		
-		#login_button{
-			width: 300px;
-			margin-top: 22px;
-		}
-		
-		#naver-login-button{
-			width: 300px;
-			margin-top: 60px;
-		}
-		
-		#kakao-login-button{
-			width: 300px;
-			margin-top: 10px;
-		}
-		
-		#personal-private-answer{
-			margin-top: 20px;
-		}
-		
-		#answer{
-			font-size: small;
-		}
-		
-		.btn-outline-success{
-			color: black;
-		}
-		
+#topGnb{
+	margin: auto;
+	width: 1100px;
+}
 
-		.btn-outline-warning{
-			color: black;
-		}
-		.bottom{
-			list-style: none;
-			float: left;
-			font-size: small;
-		}
-		
-		#bottom-ul{
-			padding-left: 0px;
-		}
-		
-		#find-id{
-			margin-left: 15px;
-		}
-		
-		#member-register{
-			margin-left: 15px;
-		}
-		
-		#footer-wrap{
-			background-color: gray
-		}
-		
-		#footer{
-			margin: auto;
-			width: 1000px;
-		}
-		
-		.footer-list{
-			list-style: none;
-			float: left;
-		}
-		
+.topGnb{
+	font-size: x-small;
+}
+
+.topBanner{
+	font-size: x-small;
+	margin-top: 10px;
+}
+
+#middleGnb{
+	margin: auto;
+	width: 1100px;
+	margin-top: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+#bottomGnb{
+	background-color: #f45951;
+	height: 35px;
+	font-size: medium;
+}
+
+#bottomGnbList{
+	margin: auto;
+	width: 1100px;
+	color: #f2f2f2;
+}
+
+.bottomGnbList{
+	list-style: none;
+	margin-left: 15px;
+	margin-top: 2px;
+	float: left;
+}
+
+#bottomGnbRight{
+	background-color: #4b4848;
+	color: #f2f2f2;
+}
+
+#login{
+	margin: auto;
+	width: 800px;
+	margin-top: 80px;
+}
+
+#loginInput{
+	width: 420px;
+	float: left;
+}
+
+#loginCheck{
+	margin-top: 15px;
+}
+
+#loginImage{
+	width: 300px;
+	float: right;
+}
+
+#snsLogin{
+	margin-top: 30px;
+	width: 420px; 
+	float: left;
+}
+
+#loginAnswer{
+	width: 420px;
+	font-size: small;
+	color: gray;
+	margin-top: 10px;
+	float: left;
+}
+
+#loginBottom{
+	width: 420px;
+	font-size: small;
+	margin-top: 10px;
+	float: left;
+}
+
+#loginBottomImage{
+	width: 420px;
+	margin-top: 40px;
+	float: left;
+}
+
+#footerWrap{
+	background-color: gray;
+	margin-top: 100px;
+	float: left;
+}
+
+#footerTop{
+	margin: auto;
+	width: 1100px;
+	float: left;
+}
+
+.footerList{
+	list-style: none;
+	float: left;	
+}
+

@@ -3,95 +3,143 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>로그인</title>
+	<title>로그인 화면</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link href="../css/member/loginForm_style.css" rel="stylesheet" type="text/css">
-
-
+	
 </head>
 <body>
-	<div id="wrap">
-		<form action="">
-			<!-- 맨위 검색대 -->
-			<div id="searchNav">
-				<img alt="인터파크 로고" src="../image/interpark_logo_top.png" id="logo">
-				<input class="form-control" type="text" aria-label="default input example" id="search">
-				<img alt="검색 돋보기" src="../image/search.png">
-				<ul class="top">
-					<li id="memberInformation" class="top">회원정보
-					<li id="memberRegister" class="top" onclick="location.href='registerForm.html'" style="cursor: pointer;">회원가입
-					<li id="login" class="top">로그인
-				</ul>
-			</div><!-- searchNav end -->
-			<!-- 검색대 아래 nav --><!-- 메뉴 구성 다시 생각해 봐야지 -->
-			<nav class="navbar navbar-expand-lg bg-black" id="navbar">
-			    <div class="navbar-nav">
-			      <a class="nav-link" href="#">뮤지컬</a>
-			      <a class="nav-link" href="#">콘서트</a>
-			      <a class="nav-link" href="#">연극</a>
-			      <a class="nav-link" href="#">클래식/무용</a>
-			      <a class="nav-link" href="#">스포츠</a>
-			      <a class="nav-link" href="#">레저</a>
-			      <a class="nav-link" href="#">전시/행사</a>
-			      <a class="nav-link" href="#">아동/가족</a>
-			    </div>
-			</nav>
-			<div id="login_wrap">
-			<!-- id입력창 -->
-			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="id">
-		    <!-- password 입력창 -->
-		    <div id="password">
-		    	<input type="password" class="form-control" id="formGroupExampleInput" placeholder="password">
-		    </div><br>
-		    <!-- 자동로그인,아이디저장 버튼 -->
-			<div class="form-check form-check-inline">
- 				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-			  	<label class="form-check-label" for="inlineCheckbox1">자동 로그인</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  	<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			  	<label class="form-check-label" for="inlineCheckbox2">아이디 저장</label>
-			</div>	
-			<!-- 로그인 버튼 -->
-			<button type="button" class="btn btn-dark" id="login_button">로그인</button>
-			<!-- 네이버 로그인 버튼 -->
-			<button type="button" class="btn btn-outline-success" id="naver-login-button">네이버 로그인</button> 	    
-		    <!-- 카카오 로그인 버튼 -->
-		    <button type="button" class="btn btn-outline-warning" id="kakao-login-button">카카오 로그인</button> 	    
-		    <!-- 개인정보 보호 설명 -->
-		    <div id="personal-private-answer">
-		    	<p id="answer">개인정보 보호를 위해 공용 PC에서 사용 후 SNS계정의 로그아웃 상태를 반드시 확인해주세요.</p>
-		    </div>
-		    <!-- 줄긋기 -->
-		    <hr>
-		    <!-- 아이디,비밀번호 찾기 회원가입 -->
-			    <div style="height: 100px;">
-				    <ul class="bottom" id="bottom-ul">
-						<li class="bottom">아이디찾기
-						<li class="bottom" id="find-id">비밀번호찾기
-						<li class="bottom" id="member-register">회원가입
-					</ul>
-		    	</div>
-		    </div><!-- login_wrap end -->
-			<div id="footer-wrap">
-				<div id="footer">
-					<ul class="footer-list">
-						<li class="footer-list">개인정보처리방침
-						<li class="footer-list">청소년보호정책
-						<li class="footer-list">이용약관
-						<li class="footer-list">티켓판매안내
-						<li class="footer-list">IR
-						<li class="footer-list">회사소개
-						<li class="footer-list">채용공고
-						<li class="footer-list">우수회원제도
-						<li class="footer-list">제휴/광고안내
-					</ul>				
+<div id="wrap">	
+	<div id="topGnbbg">
+		<!-- 최상단 배너 -->
+		<div id="topGnb">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+				  <a class="nav-link disabled topGnb">홈</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled topGnb">도서</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active topGnb" aria-current="page" href="#">티켓</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled topGnb">투어</a>
+				</li>
+				<li class="topBanner" style="margin-left: 500px;"><a>로그인</a>
+				<li class="topBanner" style="margin-left: 10px;"><a>회원가입</a>
+				<li class="topBanner" style="margin-left: 10px;"><a>예매확인/취소</a>
+				<li class="topBanner" style="margin-left: 10px;"><a>마이페이지</a>
+				<li class="topBanner" style="margin-left: 10px;">고객센터
+				<li class="topBanner" style="margin-left: 10px;">모바일APP
+				<li class="topBanner" style="margin-left: 10px;">Language
+			</ul>
+		</div>
+	</div>
+	<!-- 중간 배너 -->
+	<div id="middleGnb">
+		<h2 style="display: inline-block;">
+			<a style="font-family: 'Lato', sans-serif;">티켓</a>
+		</h2>
+		<img alt="" src="../image/ticketInterParkLogo.png" style="margin-bottom: 10px;">
+		<input class="form-control" type="text" aria-label="default input example" style="width: 300px; display: inline-block; margin-left: 80px;">
+		<img alt="" src="../image/searchRightPlay.png" style="margin-left: 20px;">
+		<a>| 영화 |</a>
+		<img alt="" src="../image/searchRightDiscount.png">
+	</div>
+	<!-- 하단 배너 -->
+	<div id="bottomGnb">
+		<div id="bottomGnbList">
+			<ul class="bottomGnbList">
+				<li class="bottomGnbList"><a><i class="fa-solid fa-align-justify"></i></a>
+				<li class="bottomGnbList">뮤지컬
+				<li class="bottomGnbList">콘서트
+				<li class="bottomGnbList">연극
+				<li class="bottomGnbList">클래식/무용
+				<li class="bottomGnbList">스포츠
+				<li class="bottomGnbList">레저
+				<li class="bottomGnbList">전시/행사
+				<li class="bottomGnbList">아동/가족
+				<li class="bottomGnbList">TOPING
+			</ul>					
+		</div>
+		<div id="bottomGnbRight">
+			<ul class="bottomGnbList">		
+				<li class="bottomGnbList"><i class="fa-regular fa-bookmark"></i>랭킹
+				<li class="bottomGnbList">지역
+				<li class="bottomGnbList"><i class="fa-solid fa-location-dot"></i>공연장
+			</ul>
+		</div>		
+	</div>	
+	<!-- 로그인 영역 -->
+	<div id="login">
+		<!-- 아이디 비번 입력영역 -->
+		<div id="loginInput">
+			<input class="form-control" type="text" aria-label="default input example" placeholder="아이디">
+			<input class="form-control" type="text" aria-label="default input example" placeholder="비밀번호" style="margin-top: 10px;">
+			<button type="button" class="btn btn-danger" style="width: 420px; margin-top: 15px;">로그인</button>
+			<!-- 자동로그인 아이디저장 체크버튼 -->
+			<div id="loginCheck">	
+				<div class="form-check form-check-inline">
+	  				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+	 			 	<label class="form-check-label" for="inlineRadio1">자동로그인</label>
 				</div>
-			</div>		
-		</form>
-	</div><!-- wrap end -->	
-
+				<div class="form-check form-check-inline">
+	 	 			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+	  				<label class="form-check-label" for="inlineRadio2">아이디저장</label>
+				</div>			
+			</div>
+		</div>
+		<!-- 오른쪽 이미지 영역 -->
+		<div id="loginImage">
+			<img alt="" src="../image/loginRightPhone.png">
+			<img alt="" src="../image/loginRightAdd.png" style="margin-top: 10px;">
+		</div>
+		<!-- 네이버 카카오 로그인 영역 -->
+		<div id="snsLogin">
+			<button type="button" class="btn btn-outline-success" style="width: 420px;">네이버 로그인</button>
+			<button type="button" class="btn btn-outline-warning" style="width: 420px; margin-top: 10px;">카카오 로그인</button>
+			<button type="button" class="btn btn-outline-primary" style="width: 420px; margin-top: 10px;">페이스북 로그인</button>
+			<button type="button" class="btn btn-outline-dark" style="width: 420px; margin-top: 10px;">구글 로그인</button>
+		</div>
+		<!-- 로그인 밑에 설명영역 -->
+		<div id="loginAnswer">
+			개인정보 보호를 위해 공용 PC에서 사용 후 SNSN 계정의 로그아웃 상태를 반드시 확인해주세요.
+			<hr>
+		</div>
+		<!-- 아이디 비번 찾기,회원가입 영역 -->
+		<div id="loginBottom">
+			<a>아이디 찾기</a>
+			<a style="margin-left: 10px;">비밀번호 찾기</a>
+			<a style="margin-left: 10px;">회원가입</a>
+		</div>
+		<div id="loginBottomImage">
+			<img alt="" src="../image/loginBottomImg.png">
+		</div>
+	</div><!-- login end -->
+	<!-- footer영역 시작 -->
+	<div id="footerWrap">
+		<div id="footerTop" >
+			<ul class="footerList">
+				<li class="footerList"><b>개인정보처리방침</b>
+				<li class="footerList">청소년 보호정책
+				<li class="footerList">이용약관
+				<li class="footerList">티켓판매 안내
+				<li class="footerList">IR
+				<li class="footerList">회사소개
+				<li class="footerList">채용공고
+				<li class="footerList">우수고객제도
+				<li class="footerList">제휴/광고안내
+				<li class="footerList"><!-- 언어선택 -->
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+</div> <!-- wrap end -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
 </body>
 </html>

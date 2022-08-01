@@ -56,7 +56,6 @@
 
 #loginInput{
 	width: 420px;
-	float: left;
 }
 
 #loginCheck{
@@ -65,13 +64,12 @@
 
 #loginImage{
 	width: 300px;
-	float: right;
+	float: right; 
 }
 
 #snsLogin{
 	margin-top: 30px;
 	width: 420px; 
-	float: left;
 }
 
 #loginAnswer{
@@ -79,36 +77,36 @@
 	font-size: small;
 	color: gray;
 	margin-top: 10px;
-	float: left;
 }
 
 #loginBottom{
 	width: 420px;
 	font-size: small;
 	margin-top: 10px;
-	float: left;
 }
 
 #loginBottomImage{
 	width: 420px;
 	margin-top: 40px;
-	float: left;
 }
 
 #footerWrap{
-	background-color: gray;
+	background-color: #e8e8ea;
 	margin-top: 100px;
-	float: left;
+	height: 200px;
 }
 
 #footerTop{
 	margin: auto;
 	width: 1100px;
-	float: left;
+	margin-top: 30px;
+	display: inline-block;
 }
 
 .footerList{
 	list-style: none;
-	float: left;	
+	float: left;
+	margin:auto;
+	font-size: small;
 }
 

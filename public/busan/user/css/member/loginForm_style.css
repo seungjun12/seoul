@@ -4,7 +4,7 @@
 
 #topGnb{
 	margin: auto;
-	width: 1100px;
+	width: 960px;
 }
 
 .topGnb{
@@ -18,7 +18,7 @@
 
 #middleGnb{
 	margin: auto;
-	width: 1100px;
+	width: 960px;
 	margin-top: 50px;
 }
 
@@ -32,7 +32,7 @@
 
 #bottomGnbList{
 	margin: auto;
-	width: 1100px;
+	width: 960px;
 	color: #f2f2f2;
 }
 
@@ -50,7 +50,7 @@
 
 #login{
 	margin: auto;
-	width: 800px;
+	width: 760px;
 	margin-top: 80px;
 }
 
@@ -92,21 +92,65 @@
 
 #footerWrap{
 	background-color: #e8e8ea;
+	width : 100%;
+	clear: both;
+	display: inline-block;
 	margin-top: 100px;
-	height: 200px;
+	font-size: 12px;
 }
 
 #footerTop{
 	margin: auto;
-	width: 1100px;
-	margin-top: 30px;
+	width: 960px;
+	margin-top: 20px;
+
+}
+
+#footerTopList{
+	border-bottom: 1px solid #ced2d6;
 	display: inline-block;
+	width: 100%;
+	text-align: left;
 }
 
 .footerList{
 	list-style: none;
-	float: left;
 	margin:auto;
 	font-size: small;
+	float: left;
 }
+
+.footerListLi{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+#footerBottom{
+	display: inline-block;
+	color: #999;
+	text-align: left;
+	width: 100%;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+dt{
+	display: block;	
+	float: left;
+	margin-right: 36px;
+}
+
+dd{
+	display: block;
+	margin-inline-start: 40px;
+}
+
 

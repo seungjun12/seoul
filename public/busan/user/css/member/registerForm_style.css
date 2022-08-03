@@ -28,14 +28,45 @@ h5{
 	text-align: center;
 }
 
-span{
-	font-size: xx-small;
-	color: gray;
+#personalPeriod{
+	font-size: 13px;
+	line-height: 20px;
+	color: #999;
+	margin-top: 5px;
 }
 
 .checkbox-gender{
 	margin-left: 210px; 
 }
+
+.form-check-label{
+	font-size: small;	
+}
+
+#inputPhone{
+	text-align: left;
+	width: 300px;
+	display: inline-block;
+}
+
+#agreep{
+	margin-top: 15px;
+}
+
+#registerFooter{
+	margin-top: 80px;
+	height: 80px;
+	background-color: #fafafa;	
+}
+
+#footerCopyright{
+	text-align: center;
+	line-height: 80px;
+	color: #999;
+	font-size: xx-small;
+}
+
+
 
 
 

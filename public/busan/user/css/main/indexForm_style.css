@@ -47,11 +47,29 @@
 	color: #f2f2f2;
 }
 
+#image{
+	height: 416px;
+}
+
 #contentWrap{
 	margin: auto;
 	width: 960px;
 }
 
+.todayBanner{
+	width: 100%;
+	margin-top: 23px;	
+}
+
+.bannerAnswer{
+	text-align: center;	
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+.bottomBanner{
+	margin-top: 40px;
+}
 
 #footerWrap{
 	background-color: #e8e8ea;

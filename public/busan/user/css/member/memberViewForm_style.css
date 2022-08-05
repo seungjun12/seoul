@@ -21,3 +21,13 @@
 	width: 960px;
 	margin-top: 50px;
 }
+
+h3{
+	display: inline-block;
+}
+
+.form-control{
+	width: 300px;
+	display: inline-block;
+	margin-left: 50px;
+}

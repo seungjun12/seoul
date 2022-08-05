@@ -54,10 +54,24 @@
 }
 
 .sportsListWrap{
-	width: 960px;
+	width: 1040px;
 	margin: auto;
 	padding: 40px;
 	overflow: hidden;
+}
+
+.card{
+	display: inline-block;
+	width: 310px;
+	height: 402px;
+}
+
+.card-body{
+	text-align: center;
+}
+
+.btn{
+	width: 200px;
 }
 
 #footerWrap{

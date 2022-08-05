@@ -27,6 +27,7 @@
 	background-color: #f45951;
 	height: 35px;
 	font-size: medium;
+	font-size: 0;
 }
 
 #bottomGnbList{
@@ -40,6 +41,7 @@
 	margin-left: 15px;
 	margin-top: 2px;
 	float: left;
+	font-size: medium;
 }
 
 #bottomGnbRight{

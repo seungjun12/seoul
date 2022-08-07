@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>메인화면</title>
+	<title>게임 팀 선택화면</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link href="../css/main/indexForm_style.css" rel="stylesheet" type="text/css">
+	<link href="../css/main/gameChoiceForm_style.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap" rel="stylesheet">
@@ -28,8 +28,8 @@
 				<li class="nav-item">
 				  <a class="nav-link disabled topGnb">투어</a>
 				</li>
-				<li class="topBanner" style="margin-left: 350px;"><a onclick="location.href='../member/loginForm.html'" style="cursor: pointer;">로그인</a>
-				<li class="topBanner" style="margin-left: 10px;"><a onclick="location.href='../member/registerForm.html'" style="cursor: pointer;">회원가입</a>
+				<li class="topBanner" style="margin-left: 350px;"><a onclick="location.href='loginForm.html'" style="cursor: pointer;">로그인</a>
+				<li class="topBanner" style="margin-left: 10px;"><a onclick="location.href='registerForm.html'" style="cursor: pointer;">회원가입</a>
 				<li class="topBanner" style="margin-left: 10px;"><a>예매확인/취소</a>
 				<li class="topBanner" style="margin-left: 10px;"><a>마이페이지</a>
 				<li class="topBanner" style="margin-left: 10px;">고객센터
@@ -58,7 +58,7 @@
 				<li class="bottomGnbList">콘서트
 				<li class="bottomGnbList">연극
 				<li class="bottomGnbList">클래식/무용
-				<li class="bottomGnbList" onclick="location.href='teamChoiceForm.html'" style="cursor: pointer;">스포츠
+				<li class="bottomGnbList" >스포츠
 				<li class="bottomGnbList">레저
 				<li class="bottomGnbList">전시/행사
 				<li class="bottomGnbList">아동/가족
@@ -72,78 +72,56 @@
 				<li class="bottomGnbList"><i class="fa-solid fa-location-dot"></i>공연장
 			</ul>
 		</div>		
-	</div>	
-	<!-- 이미지 영역 -->
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  		<div class="carousel-inner">
-   			<div class="carousel-item active">
-      			<img src="../image/carousel1.png" class="d-block w-100" alt="..." id="image">
-    		</div>
-   			<div class="carousel-item">
-      			<img src="../image/carousel2.png" class="d-block w-100" alt="..." id="image">
-    		</div>
-    		<div class="carousel-item">
-      			<img src="../image/carousel3.png" class="d-block w-100" alt="..." id="image">
-    		</div>
-  		</div>
 	</div>
-	<!-- 밑에 배너들 시작 -->
-	<div id="contentWrap">
-		<div id="contendTop">
-			<img alt="" src="../image/contentTop.png">
+	<!-- 배너 밑 -->
+	<div class="sportsWrap">
+		<div class="baseballImage">
+			<img alt="" src="../image/baseballImage.png" style="width: 100%;">
 		</div>
-		<div>
-			<img alt="" src="../image/contentMiddle.png">
+		<!-- 팀선택 카트 영역 -->
+		<div class="sportsListWrap">
+			<div class="card" style="width: 18rem;">
+  				<img src="../image/kiwoomLogo.png" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<h5 class="card-title">키움 히어로즈</h5>
+    				<p class="card-text">고척스카이돔</p>
+    				<p class="card-text" style="font-size: xx-small">KIWOOM HEROES BASEBALL CLUB</p>
+    				<a href="#" class="btn btn-danger">예매하기</a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+  				<img src="../image/doosanLogo.png" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<h5 class="card-title">두산 베어스</h5>
+    				<p class="card-text">잠실야구장</p>
+    				<p class="card-text" style="font-size: xx-small">DOOSAN BEARS BASEBALL CLUB</p>
+    				<a href="#" class="btn btn-danger">예매하기</a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+  				<img src="../image/ssgLogo.jpg" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<h5 class="card-title">SSG 랜더스</h5>
+    				<p class="card-text">인천SSG랜더스필드</p>
+    				<p class="card-text" style="font-size: xx-small">SSG LANDERS</p>
+    				<a href="#" class="btn btn-danger" onclick="location.href='gameChoiceForm.html'" style="cursor: pointer;">예매하기<a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem; margin-top: 10px;">
+  				<img src="../image/ssgLogo.jpg" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<h5 class="card-title">SSG 랜더스 퓨처스 서머리그</h5>
+    				<p class="card-text">인천SSG랜더스필드</p>
+    				<p class="card-text" style="font-size: xx-small; margin-bottom: 16px;">SSG LANDERS FUTURES SUMMER LEGGUE</p>
+    				<a href="#" class="btn btn-danger">예매하기<a>
+  				</div>
+			</div>		
 		</div>
-		<!-- 랭킹영역 -->
-		<div>
-		<h1>랭킹 보수중</h1>
-		</div>
-		<!-- 중간 이미지 -->
-		<div>
-			<img alt="" src="../image/mainImage.png">
-		</div>
-		<!-- today banner -->
-		<div class="todayBanner">
-			<img alt="" src="../image/todayBanner.png">
-		</div>
-		<!-- 뮤지컬 글 -->
-		<div class="bannerAnswer">
-			<h3>MUSICAL</h3>
-		</div>
-		<!-- 뮤지컬 이미지 -->
-		<div>
-			<img alt="" src="../image/musicalImage.png">
-		</div>
-		<!-- 콘서트 글 -->
-		<div class="bannerAnswer">
-			<h3>CONCERT</h3>
-		</div>
-		<!-- 콘서트 이미지 -->
-		<div>
-			<img alt="" src="../image/concertImage.png">		
-		</div>
-		<!-- play&classic글 -->
-		<div class="bannerAnswer">
-			<h3>PLAY&CLASSIC</h3>
-		</div>
-		<!-- play&classic이미지 -->
-		<div>
-			<img alt="" src="../image/play&classicImage.png">		
-		</div>
-		<!-- 스포츠 영역 -->
-		<div class="bannerAnswer">
-			<h3>SPORTS%EXHIBITION&THEATER</h3>
-		</div>
-		<!-- 스포츠 이미지 -->
-		<div>
-			<img alt="" src="../image/playImage.png">		
-		</div>
-		<!-- 하단 배너 -->
-		<div class="bottomBanner">
-			<img alt="" src="../image/bottomBanner.png">
-		</div>
-	</div><!-- contentWrap end -->
+	
+	
+	</div><!-- sportWrap end -->
+		
+	
 	<!-- footer영역 시작 -->
 	<div id="footerWrap">
 		<div id="footerTop">

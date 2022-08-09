@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="wrap">	
+<div>	
 	<div id="topGnbbg">
 		<!-- 최상단 배너 -->
 		<div id="topGnb">
@@ -73,54 +73,64 @@
 			</ul>
 		</div>		
 	</div>
-	<!-- 경기 팀 디테일 영역 -->
-	<div class="sportsDetailHeader">
-		<div class="sportsDetailContent">
-			<div class="divTeamName teamName">
-				SSG 랜더스
-			</div>
-			<!-- <div class="dropdown"> --><!-- 리스트 정리해야됨 -->
-  				<button class="btn btn-light dropdown-toggle selectDetail" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="selectDetailSports">
-    				야구
-  				</button>
-  				<ul class="dropdown-menu">
-    				<li><a class="dropdown-item" href="#">야구</a></li>
-    				<li><a class="dropdown-item" href="#">축구</a></li>
-    				<li><a class="dropdown-item" href="#">E스포츠</a></li>
-  				</ul>
-			<!-- </div> -->
-			<!-- <div class="dropdown"> -->
-  				<button class="btn btn-light dropdown-toggle selectDetail" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    				SSG 랜더스
-  				</button>
-  				<ul class="dropdown-menu">
-    				<li><a class="dropdown-item" href="#">키움 히어로즈</a></li>
-    				<li><a class="dropdown-item" href="#">두산 베어스</a></li>
-    				<li><a class="dropdown-item" href="#">SSG 랜더스</a></li>
-    				<li><a class="dropdown-item" href="#">SSG 랜더스 퓨처스 서머리그</a></li>
-  				</ul>
-			<!-- </div> -->			
-		</div>
-	</div>
-	<!-- 경기 팀 이미지 -->
-	<div class="sportsDetailTop">
-	 	<img alt="" src="../image/sportsDetailTop.png" id="sportsDetailTopImage">
-	</div>
-	<!-- 경기 선택 영역 -->
-	<div class="sportsDetailContents">
-		<div class="buyTitle">
-			<b>예매하기</b>
-		</div>
-		<div class="timeScheduleList">
-			<div class="timeSchedule">
-				<div class="schedulDate">
-					<b class="font">08.10</b>	
+	<div class="wrap">	
+		<!-- 경기 팀 디테일 영역 -->
+		<div class="sportsDetailHeader">
+			<div class="sportsDetailContent">
+				<div class="divTeamName teamName">
+					SSG 랜더스
 				</div>
+				<!-- <div class="dropdown"> --><!-- 리스트 정리해야됨 -->
+	  				<button class="btn btn-light dropdown-toggle selectDetail" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="selectDetailSports">
+	    				야구
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a class="dropdown-item" href="#">야구</a></li>
+	    				<li><a class="dropdown-item" href="#">축구</a></li>
+	    				<li><a class="dropdown-item" href="#">E스포츠</a></li>
+	  				</ul>
+				<!-- </div> -->
+				<!-- <div class="dropdown"> -->
+	  				<button class="btn btn-light dropdown-toggle selectDetail" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    				SSG 랜더스
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a class="dropdown-item" href="#">키움 히어로즈</a></li>
+	    				<li><a class="dropdown-item" href="#">두산 베어스</a></li>
+	    				<li><a class="dropdown-item" href="#">SSG 랜더스</a></li>
+	    				<li><a class="dropdown-item" href="#">SSG 랜더스 퓨처스 서머리그</a></li>
+	  				</ul>
+				<!-- </div> -->			
+			</div>
+		</div>
+		<!-- 경기 팀 이미지 -->
+		<div class="sportsDetailTop">
+		 	<img alt="" src="../image/sportsDetailTop.png" id="sportsDetailTopImage">
+		</div>
+		<!-- 경기 선택 영역 -->
+		<div class="sportsDetailContents">
+			<div class="buyTitle">
+				<b>예매하기</b>
+			</div>
+			<div class="timeScheduleList">
+				<div class="timeSchedule">
+					<div class="schedulDate">
+						<b style="font-size: 35px;">08.10</b>						
+					</div>
+				</div>
+			</div>
+		</div><!-- sportsDetailContents end -->
+		<!-- 스포츠 탭 영역 --> <!-- 여기서 부터 하면됨 -->
+		<div class="sportsTabWrapper tabModule">
+			<div class="tabWrapper">
+				<ul class="tabWrap">
+					<li class="active" onclick="fnshowTabIframe(1,'');" id="SportsTab1">
+						<span>예매/관람안내</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 	
-	</div><!-- sportsDetailContents end -->
-
 		
 	
 	<!-- footer영역 시작 -->
@@ -168,7 +178,7 @@
 					</dd>
 				</dl>
 			</div>
-		
+		</div><!-- wrap end -->
 	
 	</div><!-- footerWrap end -->
 	

@@ -148,7 +148,7 @@
 }
 
 .fontWeak{
-	margin-right: 12px;
+	margin-right: 35px;
 	font-size: small;
 	color: #999;
 }
@@ -169,13 +169,98 @@
 .teamMatch{
 	width: 318px;
 	height: 104px;
-	padding-top: 16px;
+	margin-top: 16px;
 	float: left;
 	margin-right: 20px;
+	font-size: 12px; 
 }
 
+.team1{
+	width: 135px;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+}
 
+.logoName{
+	display: inline-block;
+}
 
+.vs{
+	float: left;
+	width: 45px;
+	text-align: center;
+	margin-top: 22px;
+	height: 88px;
+}
+
+#vs{
+	vertical-align: center;
+	font-size: 22px;
+}
+
+.team2{
+	width: 135px;
+	float: left;
+	/* margin-right: 20px; */
+	text-align: center;
+	font-size: 14px;
+	height: 88px;
+}
+
+.div{
+	margin-top: 45px;
+	margin-bottom: 30px;
+	border-right: 1px solid #eee;
+}
+
+.ground{
+	padding-left: 20px;
+	display: table;
+	float: left;
+	width: 145px;
+	height: 120px;
+	margin-right: 22px;
+}
+
+.ground > div{
+	display: table-cell;
+	height: 120px;
+	vertical-align: middle;
+	width: 125px;
+}
+
+.ground > div{
+	font-size: 11px;
+	color: #999;
+	line-height: 12px;
+}
+
+.ground span{
+	color: #333;
+	font-size: 14px;
+	font-style: normal;
+	position: relative;
+	line-height: 14px;
+}
+
+.nogameTable{
+	margin-bottom: 10px;
+	height: 120px;
+	background-color: white;
+	border-left: 1px solid #6cd7d8;
+	display: flex;
+}
+
+.btns{
+	height: 120px;
+	width: 128px;
+	float: right;
+	background-color: #6cd7d8;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+}
 
 
 

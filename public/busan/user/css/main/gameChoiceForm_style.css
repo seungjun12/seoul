@@ -257,9 +257,15 @@
 	width: 128px;
 	float: right;
 	background-color: #6cd7d8;
-	text-align: center;
 	color: white;
+	display: table;
+}
+
+.btnsWrite{
+	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
+	font-size: 13px;
 }
 
 

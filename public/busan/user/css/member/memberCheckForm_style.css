@@ -48,47 +48,7 @@
 	color: #f2f2f2;
 }
 
-#login{
-	margin: auto;
-	width: 760px;
-	margin-top: 80px;
-}
 
-#loginInput{
-	width: 420px;
-}
-
-#loginCheck{
-	margin-top: 15px;
-}
-
-#loginImage{
-	width: 300px;
-	float: right; 
-}
-
-#snsLogin{
-	margin-top: 30px;
-	width: 420px; 
-}
-
-#loginAnswer{
-	width: 420px;
-	font-size: small;
-	color: gray;
-	margin-top: 10px;
-}
-
-#loginBottom{
-	width: 420px;
-	font-size: small;
-	margin-top: 10px;
-}
-
-#loginBottomImage{
-	width: 420px;
-	margin-top: 40px;
-}
 
 #footerWrap{
 	background-color: #e8e8ea;

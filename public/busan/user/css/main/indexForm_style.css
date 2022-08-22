@@ -47,13 +47,18 @@
 	color: #f2f2f2;
 }
 
-#image{
-	height: 416px;
+.carousel-inner{
+	position: absolute;
 }
+
+/* #image{
+	height: 416px;
+} */
 
 #contentWrap{
 	margin: auto;
 	width: 960px;
+	margin-top: 400px;
 }
 
 .rankingWraps{

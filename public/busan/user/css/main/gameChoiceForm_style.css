@@ -273,6 +273,64 @@
 	font-size: 13px;
 }
 
+.sportsTabWrapper{
+	width: 960px;
+	padding-bottom: 40px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	margin: auto;
+}
+
+.sportsTabWrapper > ul{
+	width: 100%;
+	display: table;
+    height: 60px;
+    background-color: #2f323b;
+    table-layout: fixed;
+    padding: 0;
+}
+
+.sportsTabWrapper > ul >li {
+	list-style: none;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.sportsTabWrapper > ul >li.active {
+	background-color: #fff;
+}
+
+.tabContentsWrapper{
+	padding: 40px 40px 0;
+}
+
+.sportsTabWrapper .tabContentsWrapper .tabcontentsWrap.current {
+    display: block;
+}
+
+.sportsTabWrapper .tabContentsWrapper .tabcontentsWrap h3 {
+    font-size: 18px;
+    font-style: normal;
+    color: #333;
+    padding-bottom: 8px;
+}
+
+.sportsTabWrapper .tabContentsWrapper .tabcontentsWrap .dataContents {
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-style: normal;
+    color: #333;
+    line-height: 1.7;
+}
+
+.dataContents > p{
+	height: 24px;
+	font-size: 13px;
+}
+
+
 
 
 

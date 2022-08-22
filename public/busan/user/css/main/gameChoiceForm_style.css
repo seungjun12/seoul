@@ -223,6 +223,11 @@
 	margin-right: 22px;
 }
 
+.modal-body > p{
+	text-align: center;
+	font-size: small;
+}
+
 .ground > div{
 	display: table-cell;
 	height: 120px;

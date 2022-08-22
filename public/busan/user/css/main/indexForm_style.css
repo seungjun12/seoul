@@ -56,6 +56,30 @@
 	width: 960px;
 }
 
+.rankingWraps{
+	width: 100%;
+	border-bottom: 1px solid #c6c6c6;
+	margin-top: 20px;
+}
+
+.rankingTitle{
+	position: relative;
+	height: 32px;
+	display: inline-block;
+}
+
+.rankingTitle > span{
+	font-size: 20px;
+}
+
+.rankingTabs{
+	margin-left: 50px;
+}
+
+.rankingNav{
+	font-size: small;
+}
+
 .todayBanner{
 	width: 100%;
 	margin-top: 23px;	

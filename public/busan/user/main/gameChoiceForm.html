@@ -165,7 +165,7 @@
 				        <img alt="문자들입니다" src="">
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-danger" onclick="location.href='seatChoiceForm.html'">확인</button>
+				        <button type="button" class="btn btn-danger"><a href="javascript:popup()" style="cursor: pointer;">확인</a></button>
 				      </div>
 				    </div>
 				  </div>
@@ -286,12 +286,12 @@
 		<!-- 밑에 설명영역 탭 -->
 		<div class="sportsTabWrapper tabModule">
 			<ul>
-				<li class="active" onclick="fnShowTabIframe(1, '');" id="sportsTab1"><span>예매/관람안내</span>
-				<li onclick="fnShowTabIframe(2, '');" id="sportsTab2"><span>좌석도/가격</span>
-				<li onclick="fnShowTabIframe(3, '');" id="sportsTab3"><span>예매TIP</span>
+				<li class="tab-link current active" data-tab="tab-1"><span>예매/관람안내</span>
+				<li class="tab-link" data-tab="tab-2"><span>좌석도/가격</span>
+				<li class="tab-link" data-tab="tab-3"><span>예매TIP</span>
 			</ul>	
 			<!-- 밑에 설명영역 -->
-			<div class="tabContentsWrapper">
+			<div class="tabContentsWrapper tab-content current" id="tab-1">
 				<div class="tabcontentsWrap current">
 					<h3><b>예매안내</b></h3>
 					<div class="dataContents">	
@@ -431,5 +431,27 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function(){
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+
+        });
+        
+</script>
+<script langauge="javascript">
+	function popup(){
+		var url="seatChoiceForm.html";
+		var option="width544px, height=300px, top=200px"
+		window.open(url,"",option);
+	}
+</script>
 </body>
 </html>

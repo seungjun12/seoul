@@ -209,3 +209,7 @@ dd{
 	display: block;
 	margin-inline-start: 40px;
 }
+
+.btn {
+	width: 100%;
+}

@@ -20,7 +20,7 @@
 	margin-top: 5px;
 }
 
-.ticketInformation{
+.selectWrap{
 	float: left;
 	width: 230px;
 }
@@ -58,23 +58,28 @@
 	border-bottom: 2px solid black;
 }
 
-.reserveTable{
-	font-size: 11px;
+.cardInformation{
+	margin-left: 15px;
+	font-size: 13px;
+	background-color: #ebebeb;
 }
 
-.reserveTable1 > tr > td{
-	border-bottom: 1px solid #d9d9db;
+.cardSelect{
+	margin-left: 15px;
+	font-size: 12px;
+	margin-top: 5px;
 }
 
-.tdColor{
-	background-color: #f0f0f1;
-	width: 50px;
+.cardNumber{
+	margin-left: 15px;
+	height: 15px;
+	font-size: 12px;
+	margin-top: 5px;
 }
 
-.reserveInformation{
-	color: #c10606;
-	font-size: 10px;
-	width: 220px;
+.cardNumberInput{
+	width: 42px;
+	height: 18px;
 }
 
 
@@ -110,4 +115,3 @@
 .btn{
 	font-size: 14px;
 }
-

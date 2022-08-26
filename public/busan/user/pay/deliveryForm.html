@@ -51,13 +51,52 @@
 			  	</label>
 			</div>
 		</div>
+	</div><!-- ticketInformation end -->	
+	<div class="reserveWrap">	
 		<!-- 예매자 정보 -->
 		<div id="reserve"><!-- 여기부터 하자 -->
 			<div class="reserveHeader"><b>예매자 확인</b></div>
 		</div>
-		
+		<table class="reserveTable">
+			<tr>
+				<td class="tdColor">이름</td>
+				<td>박승준</td>
+			</tr>
+			<tr>
+				<td class="tdColor">생년월일</td>
+				<td>
+					<input type="text" style="width: 70px;">
+					예)870201 (YYMMDD)
+				</td>
+			</tr>
+		</table>
+		<div class="reserveInformation">
+			<span>생년월일을 정확히 입력해주세요,가입 시 입력하신 정보와 다를경우,</span>
+			<span>본인확인이 되지 않아 예매가 불가합니다.</span>
+		</div>
+		<table class="reserveTable">
+			<tr>
+				<td class="tdColor">연락처</td>
+				<td>
+					<input type="text" style="width: 60px"> -
+					<input type="text" style="width: 60px"> -
+					<input type="text" style="width: 60px">
+				</td>
+			</tr>
+			<tr>
+				<td class="tdColor">이메일</td>
+				<td>
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td class="tdColor">응원구단</td>
+				<td>SSG</td>
+			</tr>
+		</table>
+	</div>	
 	
-	</div><!-- ticketInformation end -->
+	
 	
 		
 
@@ -116,10 +155,10 @@
 			<div class="pageButton continer-fluid">
 				<div class="row">
 					<div class="col-6">
-						<button type="button" class="btn btn-dark" onclick="location.href='../main/seatChoiceForm.html'">이전단계</button>
+						<button type="button" class="btn btn-dark" onclick="location.href='priceSelectForm.html'">이전단계</button>
 					</div>
 					<div class="col">
-						<button type="button" class="btn btn-danger" onclick="location.href='deliveryForm.html'">다음단계</button>
+						<button type="button" class="btn btn-danger" onclick="location.href='payForm.html'">다음단계</button>
 					</div>
 				</div>
 			</div>

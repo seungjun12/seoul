@@ -83,6 +83,11 @@ ul.tabs{
 	padding: 0px;
 	list-style: none;
 }
+
+.tab-link{
+	cursor: pointer;
+}
+
 ul.tabs li{
 	background: none;
 	color: #222;

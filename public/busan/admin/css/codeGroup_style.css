@@ -18,6 +18,15 @@ h3{
 	font-size: 13px;
 }
 
+.searchFirst{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.searchSecond{
+	margin-left: 15px;
+}
+
 .search{
 	margin: 0px;
 }

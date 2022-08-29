@@ -368,8 +368,146 @@
 					total:0
 				</div>
 				<div class="listWrap">
+					<table class="table">
+				  		<thead class="table-dark">
+					    	<td class="td1"><input class="test" type="checkbox" value="allmemberchecked" onclick="selectall(this);" name="allmembercheck"></td>
+					    	<td>#</td>
+					    	<td>코드그룹 코드</td>
+					    	<td class="td4">코드그룹 이름(한글)</td>
+					    	<td class="td5">코드그룹 이름(영문)</td>
+					    	<td>코드갯수</td>
+					    	<td class="td7">등록일</td>
+					    	<td class="td8">수정일</td>
+					  	</thead>
+					  	<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
+						<tbody>
+					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					    	<td></td>
+					  	</tbody>
 				
+					</table>
 				</div>
+				<!-- 페이지네이션 -->
+				<div class="d-flex justify-content-center" style="margin-top: 30px;">
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination_my" style="color: black;">
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="page-item"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item"><a class="page-link" href="#">4</a></li>
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>		
+				</div>			
+				<!-- 삭제 버튼 -->
+				
+				
+				
+				
 			</div><!-- wrap end -->
 			
 
@@ -424,7 +562,37 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+	
+	<!-- checkBox -->
+	<script type="text/javascript">
+	
+		function checkSelectAll()  {
+	
+			const checkboxes = document.querySelectorAll('input[name="membercheck"]');
+	
+			const checked = document.querySelectorAll('input[name="membercheck"]:checked');
+	
+			const selectAll = document.querySelector('input[name="allmembercheck"]');
+			  
+			if(checkboxes.length === checked.length)  {
+			  selectAll.checked = true;
+			}else {
+			  selectAll.checked = false;
+			}
+			
+		}
+		
+		function selectall(selectall)  {
+			const checkboxes = document.getElementsByName('membercheck');
+			
+			checkboxes.forEach((checkbox) => {
+		    checkbox.checked = selectall.checked
+		  })
+		}
+	</script>
 
+	<!-- fontawsome -->
+	<script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

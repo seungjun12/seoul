@@ -56,11 +56,11 @@ table, th, td{
 }	
 
 .td7 , .td8{
-	width: 250px;
+	width: 150px;
 }	
 
 .td4, .td5{
-	width: 350px;
+	width: 200px;
 }
 
 .pagination_my{
@@ -101,7 +101,3 @@ table, th, td{
 .rightBtn{
 	float: right;
 }		
-
-
-
-

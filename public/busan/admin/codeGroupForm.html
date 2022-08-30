@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-	<link href="css/codeGroup_style.css" rel="stylesheet">
+	<link href="css/codeGroupForm_style.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -66,8 +66,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item active" href="buttons.html">코드그룹관리</a>
-                        <a class="collapse-item" href="cards.html">코드관리</a>
+                        <a class="collapse-item active" href="codeGrouplist.html">코드그룹관리</a>
+                        <a class="collapse-item" href="codeList.html">코드관리</a>
                         <a class="collapse-item" href="cards.html">회원관리</a>
                     </div>
                 </div>
@@ -323,188 +323,199 @@
 			<div class="wrap">
 				<!-- 제목 -->
 				<h3>코드그룹관리</h3>
-				<!-- 검색대 -->
-				<div class="searchWrap">
-					<div class="searchFirst">
-						<select class="form-select form-select-sm selectSize" aria-label=".form-select-sm example">
-						  <option selected>N</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-						<select class="form-select form-select-sm selectSize" aria-label=".form-select-sm example">
-						  <option selected>수정일</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-						<select class="form-select form-select-sm selectSize" aria-label=".form-select-sm example">
-						  <option selected>시작일</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-						<select class="form-select form-select-sm selectSize" aria-label=".form-select-sm example">
-						  <option selected>종료일</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>						
-					</div>
-					<div class="searchSecond"><!-- 여기부터 ㄱㄱ -->
-						<select class="form-select form-select-sm selectSize" aria-label=".form-select-sm example">
-						  <option selected>검색구분</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-						<input class="form-control form-control-sm" type="text" placeholder="검색" aria-label=".form-control-sm example">
-						<i class="fa fa-search" aria-hidden="true" style="cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;
-						<i class="fa fa-reply" aria-hidden="true" style="cursor: pointer;"></i>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							코드그룹 코드
+						</div>
+						<div class="col">
+							코드그룹 코드(Another)
+						</div>
 					</div>
 				</div>
-				<!-- 리스트 영역 -->
-				<div style="color: black">
-					total:0
+<!-- 				<div class="container-fluid">
+					<div class="row">
+						<div class="col-6">
+						
+						</div>
+						<div class="">
+						
+						</div>
+					</div>
 				</div>
-				<div class="listWrap">
-					<table class="table">
-				  		<thead class="table-dark">
-					    	<td class="td1"><input class="test" type="checkbox" value="allmemberchecked" onclick="selectall(this);" name="allmembercheck"></td>
-					    	<td>#</td>
-					    	<td>코드그룹 코드</td>
-					    	<td class="td4">코드그룹 이름(한글)</td>
-					    	<td class="td5">코드그룹 이름(영문)</td>
-					    	<td>코드갯수</td>
-					    	<td class="td7">등록일</td>
-					    	<td class="td8">수정일</td>
-					  	</thead>
-					  	<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-						<tbody>
-					    	<td><input class="test" type="checkbox" value="memberchecked" name="membercheck"></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					    	<td></td>
-					  	</tbody>
-				
-					</table>
+			 -->
+			 <div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="코드그룹 이름(한글)" aria-label="default input example">
+						</div>
+						<div class="col">
+						<input class="form-control" type="text" placeholder="영문(대소문자),숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>	
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							코드그룹 이름 (한글)
+						</div>
+						<div class="col">
+							코드그룹 이름 (영문)
+						</div>
+					</div>
 				</div>
-				<!-- 페이지네이션 -->
-				<div class="d-flex justify-content-center" style="margin-top: 30px;">
-					<nav aria-label="Page navigation example">
-					  <ul class="pagination_my" style="color: black;">
-					    <li class="page-item">
-					      <a class="page-link" href="#" aria-label="Previous">
-					        <span aria-hidden="true">&laquo;</span>
-					      </a>
-					    </li>
-					    <li class="page-item"><a class="page-link" href="#">1</a></li>
-					    <li class="page-item"><a class="page-link" href="#">2</a></li>
-					    <li class="page-item"><a class="page-link" href="#">3</a></li>
-					    <li class="page-item"><a class="page-link" href="#">4</a></li>
-					    <li class="page-item">
-					      <a class="page-link" href="#" aria-label="Next">
-					        <span aria-hidden="true">&raquo;</span>
-					      </a>
-					    </li>
-					  </ul>
-					</nav>		
-				</div>			
-				<!-- 삭제 버튼 -->
-				<!-- 모달띄우는것부터 시작 -->
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="한글,숫자" aria-label="default input example">
+						</div>
+						<div class="col">
+							<input class="form-control" type="text" placeholder="영문(대소문자),숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							사용여부
+						</div>
+						<div class="col">
+							순서
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<select class="form-select" aria-label="Default select example">
+						  		<option selected>Y</option>
+							  	<option value="1">N</option>
+							</select>
+						</div>
+						<div class="col">
+						<input class="form-control" type="text" placeholder="숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							설명
+						</div>
+						<div class="col">
+							삭제여부
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col">
+							<textarea rows="" cols="" style="width: 100%"></textarea>
+						</div>
+						<div class="col-6">
+							<select class="form-select" aria-label="Default select example">
+						  		<option selected>N</option>
+							  	<option value="1">Y</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							예비1 (varchar type)
+						</div>
+						<div class="col">
+							예비 (varchar type)
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="영문(대소문자),숫자" aria-label="default input example">
+						</div>
+						<div class="col">
+							<input class="form-control" type="text" placeholder="영문(대소문자),숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							예비3 (varchar type)
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="영문(대소문자),숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							예비1 (Int type)
+						</div>
+						<div class="col">
+							예비2 (Int type)
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="숫자" aria-label="default input example">
+						</div>
+						<div class="col">
+							<input class="form-control" type="text" placeholder="숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupName">
+					<div class="row">
+						<div class="col-6">
+							예비3 (Int type)
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid codeGroupInput">
+					<div class="row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="숫자" aria-label="default input example">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid lastBtn">
+					<div class="row">
+						<div class="col-6">
+							<a href="codeGrouplist.html">	
+								<button type="button" class="btn btn-secondary">
+									<i class="fa-solid fa-bars"></i>
+								</button>
+							</a>
+						</div>
+						<div class="col" style="text-align: right;">
+							<a>	
+								<button type="button" class="btn btn-danger">
+									<i class="fa-solid fa-x"></i>
+								</button>
+							</a>
+							<a>	
+								<button type="button" class="btn btn-danger">
+									<i class="fa-regular fa-trash-can"></i>
+								</button>
+							</a>
+							<a>	
+								<button type="button" class="btn btn-primary">
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
 				
 				
 				
@@ -552,6 +563,8 @@
             </div>
         </div>
     </div>
+    
+  
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

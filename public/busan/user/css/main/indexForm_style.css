@@ -89,9 +89,9 @@ ul.tabs{
 }
 
 ul.tabs li{
-	background: none;
-	color: #222;
-	display: inline-block;
+  	display: inline-block;
+	background: #898989;
+	color: white;
 	padding: 10px 15px;
 	cursor: pointer;
 }

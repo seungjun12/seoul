@@ -87,7 +87,11 @@ table, th, td{
 			    display: flex;
 			    padding-left: 0;
 			    list-style: none;
-		}
+}
+
+.page-link{
+	color: black;
+}		
 		
 .lastBtn{
 	margin-top: 10px;

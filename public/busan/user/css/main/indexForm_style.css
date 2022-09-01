@@ -61,55 +61,15 @@
 	margin-top: 400px;
 }
 
-.rankingWraps{
-	width: 100%;
-	border-bottom: 1px solid #c6c6c6;
-	margin-top: 20px;
+
+
+.container{
+	width: 500px;
+	margin: 0 auto;
 }
 
-.rankingTitle{
-	position: relative;
-	height: 32px;
-	display: inline-block;
-	width: 100%;
-}
 
-.rankingTitle > span{
-	font-size: 20px;
-}
 
-ul.tabs{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-
-.tab-link{
-	cursor: pointer;
-}
-
-ul.tabs li{
-  	display: inline-block;
-	background: #898989;
-	color: white;
-	padding: 10px 15px;
-	cursor: pointer;
-}
-
-ul.tabs li.current{
-	background: #ededed;
-	color: #222;
-}
-
-.tab-content{
-	display: none;
-	background: #ededed;
-	padding: 15px;
-}
-
-.tab-content.current{
-	display: inherit;
-}
 
 
 .todayBanner{

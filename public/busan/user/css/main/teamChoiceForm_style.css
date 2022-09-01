@@ -52,7 +52,6 @@
 .sportsWrap{
 	width: 100%;
 	background-color: #eee;
-	margin: 0;
 }
 
 .baseballImageWrap{           /* 여거 밑에 사이 공백 지워야 하는데~ */
@@ -63,6 +62,7 @@
 	overflow: hidden;
 }
 
+
 .baseballImage{
 	position: absolute;
 	width: 100%;
@@ -70,7 +70,7 @@
 }
 
 .sportsListWrap{
-	width: 1040px;
+	width: 960px;
 	margin: auto;
 	padding: 40px;
 	overflow: hidden;
@@ -82,8 +82,22 @@
 	height: 402px;
 }
 
+.card-image{
+	text-align: center;
+}
+
+.card-img-top{
+	width: 260px;
+	height: 260px;
+	margin: auto;
+}
+
 .card-body{
 	text-align: center;
+}
+
+.card-text{
+	margin-bottom: 6px;
 }
 
 .btn{

@@ -1,0 +1,30 @@
+.header{
+	border-bottom: 1px solid gray;
+}
+
+.headerWrapper{
+	width: 1500px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.center{
+	display: inline-block;
+	font-size: 25px;
+	margin-left: 150px;
+	
+}
+
+.centerLink{
+	margin-left: 80px;
+}
+
+.right{
+	display : inline-block;
+	font-size: 30px;
+	margin-left: 400px;
+}
+
+.rightLink{
+	margin-left: 80px;
+}

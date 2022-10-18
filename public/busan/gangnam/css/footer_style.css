@@ -1,0 +1,12 @@
+.footerWrapper{
+	width: 1500px;
+	margin: auto;
+}
+
+.img{
+	float: left;
+}
+
+.inline{
+	display: inline-block;	
+}	

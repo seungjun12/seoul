@@ -7,6 +7,15 @@
 	float: left;
 }
 
-.inline{
-	display: inline-block;	
+.footerTop{
+	font-size: 25px;
+}
+
+.footerMiddle{
+	font-size: 20px;
+}
+
+.footerBottom{
+	justify-content: space-evenly;
+	align-items: center;
 }	

@@ -39,26 +39,27 @@
 	margin: auto;
 }
 
-
-
-.inputBox > label{
-	width: 200px;
+section > b{
+	font-size: 30px;
 }
 
-.inputBox > label , input{
-	margin-top: 40px;
+.icon{
+	font-size: 5.0em;
+	margin: auto;
+	text-align: center;
 }
 
-.txt{
-	width: 300px;
+.btns{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 
-.txt2{
-	width: 96px;
-}
+
 
 .modifyBtn{
-	width:200px;
+	width:180px;
 	margin: auto;
 	margin-top:50px;
 	display: block;

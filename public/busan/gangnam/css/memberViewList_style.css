@@ -23,7 +23,7 @@
 	
 }
 
-.leftVanner > ul{
+ ul{
 	list-style: none;
 	padding: 0;
 }
@@ -43,28 +43,16 @@ section > b{
 	font-size: 30px;
 }
 
-.inputBox > label{
-	width: 200px;
+.contentWrap{
+	margin-top: 150px;
 }
 
-.inputBox > label , input{
-	margin-top: 40px;
+.contentList > li{
+	float: left;
+	margin-left: 20px;
 }
 
-.txt{
-	width: 300px;
-}
 
-.txt2{
-	width: 96px;
-}
 
-.modifyBtn{
-	width:200px;
-	margin: auto;
-	margin-top:50px;
-	display: block;
-	background-color: #434A72;
-	color: white;
-	height: 50px;
-}
+
+

@@ -23,7 +23,7 @@
 	
 }
 
-.leftVanner > ul{
+ ul{
 	list-style: none;
 	padding: 0;
 }
@@ -43,23 +43,23 @@ section > b{
 	font-size: 30px;
 }
 
-.icon{
-	font-size: 5.0em;
-	margin: auto;
+.contentWrap{
+	margin-top: 150px;
+}
+
+
+.rightContentWrap{
+	margin-top: 200px;
 	text-align: center;
 }
 
-.btns{
-	display: flex;
-	justify-content: space-between;
-	padding-left: 120px;
-	padding-right: 120px;
+.txt{
+	width: 550px;
+	margin-top: 20px;
 }
 
-
-
 .modifyBtn{
-	width:180px;
+	width:200px;
 	margin: auto;
 	margin-top:50px;
 	display: block;
